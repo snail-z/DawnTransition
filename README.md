@@ -1,4 +1,4 @@
-<img src="https://github.com/snail-z/zhPopupController/blob/master/Preview/logo.jpg?raw=true" width="700px" height="128px">
+## NeonPopupKit
 
 [![Language](https://img.shields.io/badge/Language-%20Objective--C%20-orange.svg)](https://travis-ci.org/snail-z/zhPopupController)
 [![Version](https://img.shields.io/badge/pod-v2.0.0-brightgreen.svg)](http://cocoapods.org/pods/zhPopupController)
