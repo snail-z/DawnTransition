@@ -7,6 +7,8 @@
 
 zhPopupController can help you pop up custom views easily. It supports custom pop-up animations, layout positions, mask effects, keyboard monitoring, gesture interaction, etc. it API simple and easy to use.
 
+
+
 ### Version 2.0
 
 zhPopupController version 2.0 has been optimized and refactored. Some methods and properties in version 1.0 are no longer compatible. Please upgrade with caution.
@@ -142,5 +144,4 @@ snail-z, haozhang0770@163.com
 ## License
 
 zhPopupController is available under the MIT license. See the LICENSE file for more info.
-
 
