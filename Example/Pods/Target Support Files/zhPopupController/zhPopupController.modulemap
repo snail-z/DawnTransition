@@ -1,6 +1,0 @@
-framework module zhPopupController {
-  umbrella header "zhPopupController-umbrella.h"
-
-  export *
-  module * { export * }
-}

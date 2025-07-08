@@ -1,16 +1,16 @@
 PODS:
-  - zhPopupController (1.0.3)
+  - NeonPopupKit (1.1.0)
 
 DEPENDENCIES:
-  - zhPopupController (from `../`)
+  - NeonPopupKit (from `../`)
 
 EXTERNAL SOURCES:
-  zhPopupController:
+  NeonPopupKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  zhPopupController: 4e6bd734062cb9c7ebe8113568550bade168bed7
+  NeonPopupKit: 8d33541b12af239c7982c17351d6d877f8674690
 
-PODFILE CHECKSUM: 86cb884fc4b34b704119b4dcdddec6187c86cd6a
+PODFILE CHECKSUM: 6b958d5b22041aa4c7f4b73846f6295279a330a5
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.16.2
