@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B839D2C72E1D53E4001C50F9 /* PopupKit in Frameworks */ = {isa = PBXBuildFile; productRef = B839D2C62E1D53E4001C50F9 /* PopupKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B8A0EE722E1D1E64006F1202 /* SPMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B839D2C72E1D53E4001C50F9 /* PopupKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = SPMDemo;
 			packageProductDependencies = (
+				B839D2C62E1D53E4001C50F9 /* PopupKit */,
 			);
 			productName = SPMDemo;
 			productReference = B8A0EE722E1D1E64006F1202 /* SPMDemo.app */;
@@ -108,6 +114,7 @@
 			mainGroup = B8A0EE692E1D1E64006F1202;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				B839D2C52E1D53E4001C50F9 /* XCRemoteSwiftPackageReference "PopupKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B8A0EE732E1D1E64006F1202 /* Products */;
@@ -339,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B839D2C52E1D53E4001C50F9 /* XCRemoteSwiftPackageReference "PopupKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/snail-z/PopupKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B839D2C62E1D53E4001C50F9 /* PopupKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B839D2C52E1D53E4001C50F9 /* XCRemoteSwiftPackageReference "PopupKit" */;
+			productName = PopupKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8A0EE6A2E1D1E64006F1202 /* Project object */;
 }

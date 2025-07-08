@@ -1,0 +1,15 @@
+{
+  "originHash" : "b3ef74dd51c530a2e552fbfa1b3cb8684dafbcf3c05bffb12c7edeba130d7d87",
+  "pins" : [
+    {
+      "identity" : "popupkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/snail-z/PopupKit.git",
+      "state" : {
+        "revision" : "ea82f6319015e4e9961a721f71ba0b7908375630",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

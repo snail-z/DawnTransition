@@ -21,7 +21,8 @@ let package = Package(
         .target(
             name: "PopupKit",
             dependencies: [],
-            path: "Sources/PopupKit"
+            path: "Sources/PopupKit",
+            resources: [.process("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(
             name: "PopupKitTests",
