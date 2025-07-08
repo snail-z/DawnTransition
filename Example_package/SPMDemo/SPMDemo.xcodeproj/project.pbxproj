@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		B8A0EE8C2E1D1E73006F1202 /* PopupKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8A0EE8B2E1D1E73006F1202 /* PopupKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		B8A0EE722E1D1E64006F1202 /* SPMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -40,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A0EE8C2E1D1E73006F1202 /* PopupKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +78,6 @@
 			);
 			name = SPMDemo;
 			packageProductDependencies = (
-				B8A0EE8B2E1D1E73006F1202 /* PopupKit */,
 			);
 			productName = SPMDemo;
 			productReference = B8A0EE722E1D1E64006F1202 /* SPMDemo.app */;
@@ -114,7 +108,6 @@
 			mainGroup = B8A0EE692E1D1E64006F1202;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B8A0EE8A2E1D1E73006F1202 /* XCLocalSwiftPackageReference "../../../PopupKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B8A0EE732E1D1E64006F1202 /* Products */;
@@ -162,6 +155,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -190,6 +184,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,20 +339,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		B8A0EE8A2E1D1E73006F1202 /* XCLocalSwiftPackageReference "../../../PopupKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../PopupKit;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B8A0EE8B2E1D1E73006F1202 /* PopupKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PopupKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8A0EE6A2E1D1E64006F1202 /* Project object */;
 }

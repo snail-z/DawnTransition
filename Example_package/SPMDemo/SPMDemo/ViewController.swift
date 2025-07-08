@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import PopupKit
+//import PopupKit
 
 class ViewController: UIViewController {
 
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .blue
         button.setTitle("popup", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.addTarget(self, action: #selector(popupAction), for: .touchUpInside)
+//        button.addTarget(self, action: #selector(popupAction), for: .touchUpInside)
         return button
     }()
     
@@ -32,22 +32,22 @@ class ViewController: UIViewController {
     }()
 }
 
-extension ViewController {
-    
-    @objc func popupAction() {
-        var config = PopupConfiguration()
-        config.coverStyle = .color(.black.withAlphaComponent(0.7))
-        config.placement = .center
-        config.dismissOnMaskTap = true
-//        config.animationType = .selectBy(enter: .slide(.top), exit: .slide(.bottom))
-        
-        config.animator = PopupSlideAnimator(
-            enter: .init(duration: 0.75, useSpringAnimation: true),
-            exit: .default,
-            directions: .init(enter: .top, exit: .bottom)
-        )
-        
-        PopupPresenter.show(testView, in: self.view, config: config)
-    }
-}
-
+//extension ViewController {
+//    
+//    @objc func popupAction() {
+//        var config = PopupConfiguration()
+//        config.coverStyle = .color(.black.withAlphaComponent(0.7))
+//        config.placement = .center
+//        config.dismissOnMaskTap = true
+////        config.animationType = .selectBy(enter: .slide(.top), exit: .slide(.bottom))
+//        
+//        config.animator = PopupSlideAnimator(
+//            enter: .init(duration: 0.75, useSpringAnimation: true),
+//            exit: .default,
+//            directions: .init(enter: .top, exit: .bottom)
+//        )
+//        
+//        PopupPresenter.show(testView, in: self.view, config: config)
+//    }
+//}
+//
