@@ -7,18 +7,47 @@
 //
 
 import UIKit
+import NeonPopupKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.addSubview(button)
+        button.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 60, y: 200, width: 120, height: 50)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    lazy var button: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .blue
+        button.setTitle("popup", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(popupAction), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var testView: TestView = {
+        let aView = TestView()
+        aView.backgroundColor = .orange
+        return aView
+    }()
 }
 
+extension ViewController {
+    
+    @objc func popupAction() {
+        var config = PopupConfiguration()
+        config.coverStyle = .color(.black.withAlphaComponent(0.7))
+        config.placement = .center
+        config.dismissOnMaskTap = true
+//        config.animationType = .selectBy(enter: .slide(.top), exit: .slide(.bottom))
+        
+        config.animator = PopupSlideAnimator(
+            enter: .init(duration: 0.75, useSpringAnimation: true),
+            exit: .default,
+            directions: .init(enter: .top, exit: .bottom)
+        )
+        
+        PopupPresenter.show(testView, in: self.view, config: config)
+    }
+}
