@@ -1,6 +1,0 @@
-framework module NeonPopupKit {
-  umbrella header "NeonPopupKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,11 +1,11 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
-target 'NeonPopupKit_Example' do
-  pod 'NeonPopupKit', :path => '../'
+target 'DawnTransition_Example' do
+  pod 'DawnTransition', :path => '../'
 
-  target 'NeonPopupKit_Tests' do
+  target 'DawnTransition_Tests' do
     inherit! :search_paths
 
     

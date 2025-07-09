@@ -1,0 +1,6 @@
+framework module DawnTransition {
+  umbrella header "DawnTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

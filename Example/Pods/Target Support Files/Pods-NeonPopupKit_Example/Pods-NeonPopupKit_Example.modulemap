@@ -1,6 +1,0 @@
-framework module Pods_NeonPopupKit_Example {
-  umbrella header "Pods-NeonPopupKit_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

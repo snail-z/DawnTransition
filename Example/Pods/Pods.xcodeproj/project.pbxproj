@@ -3,230 +3,258 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11B7C3867C33DBB1D98C79242DAFD491 /* PopupAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F291BD0BD0C3236A126065084E4CB8BA /* PopupAnimationOptions.swift */; };
-		1957E4EFE38CA2B152F8C91A67C59D76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		19679E1794A33996F21EDA2989E52232 /* PopupChainDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFB1F81928775EEAA1AEFD58A97C9 /* PopupChainDispatcher.swift */; };
-		21A2FE91235CF80E9A93B0B21E1265D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		35695A1B3A66737D479D03C7E571F047 /* PopupAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF8C1A8E5643D2EBBB13356813B22A /* PopupAnimatable.swift */; };
-		4D16E263165700AE56248FBD6A858EE5 /* PopupChainContextual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D90FD2004C35ACFBF1A5DF707E0A1 /* PopupChainContextual.swift */; };
-		5AC40AE3B976D20B4DA9A177885C5A0B /* NeonPopupKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD18376464FB16BDE32897EA70920AA8 /* NeonPopupKit-dummy.m */; };
-		6B7FF4C5DD564A1E7C551D17838E0AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		71651CA62D292E111E894F76B20CC04B /* Pods-NeonPopupKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFE8ED2E890F29838E514514A0E059D /* Pods-NeonPopupKit_Tests-dummy.m */; };
-		7BD671341F3CCB63E8BB89F822853828 /* PopupChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F985B3B8E116671DCBA5E2BEC423C8 /* PopupChainNode.swift */; };
-		8006404E68A140F41133F20E1BC2B151 /* Pods-NeonPopupKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF0153FDF898F1BB60379BFEA70034B /* Pods-NeonPopupKit_Example-dummy.m */; };
-		923FD36CBC68B88C4AEA56A61629F174 /* PopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699AFADAEBB015492B2C0F77E079952 /* PopupPresenter.swift */; };
-		933CD31F47A945FABA04C0418295111D /* PopupContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58547C1E87038ACBEBDA74498C8FA3C /* PopupContainer.swift */; };
-		A20DE65458CF6332EAD3F653A3A434F8 /* Pods-NeonPopupKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1D2F924D7AF5C7AD6DB393ED53C645 /* Pods-NeonPopupKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAF341219D476EA779D8210DC3C8B1FF /* PopupConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380448734B4C16637BD91A2D2D247192 /* PopupConfiguration.swift */; };
-		CB81F96A553AC47B23C50CCC18CBB4D6 /* PopupPresetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594D16651440DF0355421F2959A7B7B /* PopupPresetAnimator.swift */; };
-		D273571102240CB945A7911583FCC76A /* Pods-NeonPopupKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D25275112BC5C39B0BB3941DD9F0D79 /* Pods-NeonPopupKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D64667887750403733871F8D4B7F5AF8 /* PopupExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7B71F90B2920247C580EA8560BD65 /* PopupExtensions.swift */; };
-		D6C2762506803EC93C7239DAC2137A25 /* PopupCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BEEA459A0A9E65D8AB7799ED769420 /* PopupCoverView.swift */; };
-		E2376541E428D5E5422F6286231C8A61 /* PopupChainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C339CD4A6D6030EA7E15804B612D0E /* PopupChainRepresentable.swift */; };
-		E44E5688C71029C15A18F8EF87BBAADA /* PopupKeyboardResponsive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20C0B576DBD8E430ED203C01460E5DA /* PopupKeyboardResponsive.swift */; };
-		E6EC0511E4CC0EC06947CCB403655645 /* PopupPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849F7CFCD8A7A21E5F8F3E49CA6577D /* PopupPresentable.swift */; };
-		EDC8AC898134B984F9C373653043103E /* PopupKeyboardTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF81FFB297A9EEAB7E08FA4DC0A208D /* PopupKeyboardTracker.swift */; };
-		F1C680B1563A92FA453811188CB2B2C4 /* NeonPopupKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1602B9B838A043B4F8018A78361D292 /* NeonPopupKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081BEA5EACC6F5366325F878993165D9 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4A21576B3779AB0DEE2925E10A4F2 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */; };
+		12D1D7617925ED21A0C606D82D3BA452 /* DawnAnimationSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7E7CD0EB6EEFA588D0E0DEF6D74C7 /* DawnAnimationSpot.swift */; };
+		22B46014F9555B8EC1DC779C94746F87 /* DawnAnimationTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D0AD75EB112F8EC118C11597B83C6 /* DawnAnimationTurn.swift */; };
+		25BB2DFD53C02966E2B3BAD22A4E6C89 /* Pods-DawnTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A7CC9C0DE2F9F6BD21ADAF262FF01F /* DawnCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD708C75EAEDB949360D112751A843F /* DawnCompatible.swift */; };
+		272CCEA794043602BE7A125C17AAA6E9 /* DawnTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75287A26293A546545D48F0ED021881A /* DawnTransition+Interactive.swift */; };
+		285C032A27EFAE9625E1CE5A727600A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		2D964051D0F58B47176847C5EDE8231D /* DawnTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D63FC179FAC230C250E8AA06976EAE /* DawnTransition+Complete.swift */; };
+		2FB920061A3DB0D4EB268AB86F26BBD3 /* UIViewController+GoBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48ED696CB22D8780A21DF0ED4F8DAD /* UIViewController+GoBack.swift */; };
+		42A1DF0032034219B9BF34EA2A9FA8DA /* DawnAnimationWechatApplet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF19F6034B2FD839AE581CF5C1AC82 /* DawnAnimationWechatApplet.swift */; };
+		45549A7F8BA1DE1611A6455C273987D6 /* UINavigationController+DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6A6D8D87C167BD34076725128A1E4 /* UINavigationController+DawnSwizzling.swift */; };
+		50B610316FD09C9DF420B7DC068CD31C /* DawnTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF4FF3D8F736430042B8FD14C011FF4 /* DawnTransition+UINavigationControllerDelegate.swift */; };
+		60478C39BC6FCECF86BC14FAD11DF06D /* Pods-DawnTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F5149E51A318EC91AF788215E3BCDA /* Pods-DawnTransition_Tests-dummy.m */; };
+		63CF4B554355DB831465C7B79B3D3504 /* DawnAnimationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4E1EF93BA2D7CD6AB835F149DEC568 /* DawnAnimationTransform.swift */; };
+		66C2E02F46F98FA1FD35BEA6C93239D4 /* DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B0FACE82BFD13C48D8C1A18AD8C5AF /* DawnSwizzling.swift */; };
+		6886DCE04923C237BCD9679AF8C37868 /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F5F80ADEC87D772D2A124F292DEF11 /* DawnTransitionModifiers.swift */; };
+		6A098840269DBB7BCD938557A5CCF02A /* DawnTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E7BFCE929A9CD9627CADB71818CB8 /* DawnTransition.swift */; };
+		6A5424736E2A4C3AF3B0B0F17A106716 /* DawnAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA6534E2E5AF861F6D532688106283 /* DawnAnimationType.swift */; };
+		6C8CE85505B424AF4ACC119BF2E05710 /* DawnAnimationDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECADF716C93A47EB4172DB12A17407E /* DawnAnimationDrawer.swift */; };
+		6CBF4EC074247A9559660A605D91FCC7 /* DispatchQueue+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A81CFB823AE61FAC21CDDE863B510 /* DispatchQueue+Dawn.swift */; };
+		6DC66F77BB02CB5B4F7D7355694E3EAD /* UIView+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37EF893384061A4CDE9E8B87154778 /* UIView+Dawn.swift */; };
+		6F28D51C05A380765B9BFFEE1EA8DE19 /* UIView+DawnPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5900D7BF73C82E1F8575AC86AC1ACC /* UIView+DawnPanGestureRecognizer.swift */; };
+		7C10B880AC4B147D0988C9EDF252084F /* DawnTransitionAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7976967F72D28D955DEAC84B63636 /* DawnTransitionAdjustable.swift */; };
+		807C29DB6B758F5C25B7A8F303120593 /* DawnAnimationFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473C34C2D0EA3264DDFC9EF2E961B81 /* DawnAnimationFlip.swift */; };
+		87F50DB52816305FE214D1A5B0DA0CAF /* DawnAnimationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A115CF7D3EC4C1FBEDFC4C5E11258 /* DawnAnimationCard.swift */; };
+		8D4EA28C01F28D99CCB6C03550292656 /* Pods-DawnTransition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E50521F00532FDE2D89E0C9288EF411 /* Pods-DawnTransition_Example-dummy.m */; };
+		8FC40E2EA4A1C6070594350947256D24 /* DawnAnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF0B0332DC0CF7DE4005CB9A5760C8 /* DawnAnimationProducer.swift */; };
+		9E3D1D3C17795D2524564B97F3345ADF /* DawnTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B210CE92CC813745E86D313503D3C0 /* DawnTransition-dummy.m */; };
+		A71528931EEB9D2D75A01433B9E9E572 /* DawnPropertyAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66E67D45762D2BA97FAC0B250254C6E /* DawnPropertyAnimator.swift */; };
+		A7C51F25EF848B2290AC9D1398064BA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		CD7290818B58393199276020DE010BC1 /* UIViewController+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F57A1928E978682C3F5F6FAE472D26 /* UIViewController+Dawn.swift */; };
+		D096C59E66384B71BEEDAD325DE4A017 /* DawnAnimationDiffuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB38719C1CA4691927F952DB755232 /* DawnAnimationDiffuse.swift */; };
+		D1157276791F91A72DC5DDC2CD9A7308 /* DawnTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38853916407A3F161D9446E215C8C6EB /* DawnTransition+Animate.swift */; };
+		D2D397344812A49B8132F474AE8CE49F /* DawnAnimationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272216559B2E33D626A5FD3FF1A498C /* DawnAnimationGroup.swift */; };
+		D632711D121D00E1956185C80F4DB0B1 /* DawnAnimationCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B4B52524535297B28587D53EDB7C7 /* DawnAnimationCapable.swift */; };
+		D9A0F947D8C0230EF0F8B84AA25B4E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		D9E47B1F656464E95E2A4F02BE658092 /* DawnAnimationDissolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483505886F181CF33407372A86DA7A53 /* DawnAnimationDissolve.swift */; };
+		DCBB5542C21253EEA113BA75BE2FFA63 /* DawnTodayGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0834C4D80497CC7A84D406A4D7D581 /* DawnTodayGestureRecognizer.swift */; };
+		E7B4E6B3239BE7C339B9B8BAA084B6AA /* DawnTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D10E3365BF122EDE9243903A6036BD /* DawnTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA36A8E093716EF24EC3523AF9BB72A /* Pods-DawnTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB3884B083E75E880486DA0F9080350 /* Pods-DawnTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B170C3031B8432D0793083C55B6944 /* DawnAnimationCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73566ABBCB73836428BE755DEF151B27 /* DawnAnimationCube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		96AFCB1A30EAE00C7A3F72A78E5A8D45 /* PBXContainerItemProxy */ = {
+		08B54D61664A43E839A9331FB90171E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0C68D9B5AE536771298B9AC3603106A;
-			remoteInfo = NeonPopupKit;
+			remoteGlobalIDString = A6CFB672F7B23B4F7E0DF351F4E24834;
+			remoteInfo = DawnTransition;
 		};
-		9AFB9B7675D60F02B0997E5AE423A99A /* PBXContainerItemProxy */ = {
+		5E10BF34E76DA24EE82B899317A46492 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 96E59EEE8E3D70CFCF76416CAC6C6BD0;
-			remoteInfo = "Pods-NeonPopupKit_Example";
+			remoteGlobalIDString = 14FDBF1AB05729E04DB219B25751A5F0;
+			remoteInfo = "Pods-DawnTransition_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C2A33894EB1D1499351FC9EEE38917B /* Pods-NeonPopupKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeonPopupKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0CC595992B8DDD93C6DBB39C6FE93832 /* Pods-NeonPopupKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeonPopupKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0FEF36C036254C8DAF11411CD1AE8880 /* NeonPopupKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NeonPopupKit-Info.plist"; sourceTree = "<group>"; };
-		1ACF8C1A8E5643D2EBBB13356813B22A /* PopupAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupAnimatable.swift; path = PopupKit/Classes/PopupAnimatable.swift; sourceTree = "<group>"; };
-		1CF81FFB297A9EEAB7E08FA4DC0A208D /* PopupKeyboardTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupKeyboardTracker.swift; path = PopupKit/Classes/PopupKeyboardTracker.swift; sourceTree = "<group>"; };
-		380448734B4C16637BD91A2D2D247192 /* PopupConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupConfiguration.swift; path = PopupKit/Classes/PopupConfiguration.swift; sourceTree = "<group>"; };
+		00C2DCF4C9C8EB276A74419528DC8082 /* Pods-DawnTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0BB4A21576B3779AB0DEE2925E10A4F2 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UIViewControllerTransitioningDelegate.swift"; path = "Sources/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		0ECA59FA4F18E9685319E2EEAB9DF61D /* Pods-DawnTransition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		14063BB5BC9726CA1FD79DF12654A306 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		18D63FC179FAC230C250E8AA06976EAE /* DawnTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Complete.swift"; path = "Sources/Classes/DawnTransition+Complete.swift"; sourceTree = "<group>"; };
+		1E512B96FB9C653A8A8D36193B5DCD00 /* Pods-DawnTransition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2282C2EE765AA3ACB39D7F4CCAE9F787 /* DawnTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DawnTransition.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		234D0AD75EB112F8EC118C11597B83C6 /* DawnAnimationTurn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTurn.swift; path = Sources/Classes/DawnAnimationTurn.swift; sourceTree = "<group>"; };
+		2473C34C2D0EA3264DDFC9EF2E961B81 /* DawnAnimationFlip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationFlip.swift; path = Sources/Classes/DawnAnimationFlip.swift; sourceTree = "<group>"; };
+		2D6CF4EDD195171E796812F1AECB399C /* Pods-DawnTransition_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Example-Info.plist"; sourceTree = "<group>"; };
+		3272216559B2E33D626A5FD3FF1A498C /* DawnAnimationGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationGroup.swift; path = Sources/Classes/DawnAnimationGroup.swift; sourceTree = "<group>"; };
+		332E7BFCE929A9CD9627CADB71818CB8 /* DawnTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransition.swift; path = Sources/Classes/DawnTransition.swift; sourceTree = "<group>"; };
+		37F5F80ADEC87D772D2A124F292DEF11 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionModifiers.swift; path = Sources/Classes/DawnTransitionModifiers.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		39D47FB98F5BB011514EB89B44CB4C3E /* Pods-NeonPopupKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeonPopupKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		40E56D997E6E2EE853413CAC391547A9 /* NeonPopupKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NeonPopupKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4CADCC140DF337CB05D67DB2007B5D57 /* Pods-NeonPopupKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeonPopupKit_Tests"; path = Pods_NeonPopupKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FDF80A2AA0F5E8848D1923CA8E4B0F6 /* NeonPopupKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeonPopupKit.release.xcconfig; sourceTree = "<group>"; };
-		525D90FD2004C35ACFBF1A5DF707E0A1 /* PopupChainContextual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupChainContextual.swift; path = PopupKit/Classes/PopupChainContextual.swift; sourceTree = "<group>"; };
-		573B888E982564DE5740AEA42E06B30A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		695DE50864E28478DB547316A6C9985E /* NeonPopupKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeonPopupKit-prefix.pch"; sourceTree = "<group>"; };
-		6CCF0CD4347DC2675DEB4472F016EE2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6D25275112BC5C39B0BB3941DD9F0D79 /* Pods-NeonPopupKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeonPopupKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		77C339CD4A6D6030EA7E15804B612D0E /* PopupChainRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupChainRepresentable.swift; path = PopupKit/Classes/PopupChainRepresentable.swift; sourceTree = "<group>"; };
-		79BEEA459A0A9E65D8AB7799ED769420 /* PopupCoverView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupCoverView.swift; path = PopupKit/Classes/PopupCoverView.swift; sourceTree = "<group>"; };
-		7D1D2F924D7AF5C7AD6DB393ED53C645 /* Pods-NeonPopupKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeonPopupKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7EB260A805002CCD31CDF37740549CB4 /* Pods-NeonPopupKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeonPopupKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7F59A46D794DE5E820E7DC076DDAEC34 /* Pods-NeonPopupKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeonPopupKit_Example-Info.plist"; sourceTree = "<group>"; };
-		845D7FC0F8082715F18553E054394D51 /* Pods-NeonPopupKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeonPopupKit_Example.modulemap"; sourceTree = "<group>"; };
-		84F985B3B8E116671DCBA5E2BEC423C8 /* PopupChainNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupChainNode.swift; path = PopupKit/Classes/PopupChainNode.swift; sourceTree = "<group>"; };
-		91C842A99ECFD1DC4C5A0D08EF72C401 /* Pods-NeonPopupKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeonPopupKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		9CE7B71F90B2920247C580EA8560BD65 /* PopupExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupExtensions.swift; path = PopupKit/Classes/PopupExtensions.swift; sourceTree = "<group>"; };
+		38853916407A3F161D9446E215C8C6EB /* DawnTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Animate.swift"; path = "Sources/Classes/DawnTransition+Animate.swift"; sourceTree = "<group>"; };
+		38FB38719C1CA4691927F952DB755232 /* DawnAnimationDiffuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDiffuse.swift; path = Sources/Classes/DawnAnimationDiffuse.swift; sourceTree = "<group>"; };
+		452A115CF7D3EC4C1FBEDFC4C5E11258 /* DawnAnimationCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCard.swift; path = Sources/Classes/DawnAnimationCard.swift; sourceTree = "<group>"; };
+		481F575376F62F97C67DFFAFAF667F66 /* Pods-DawnTransition_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Tests-Info.plist"; sourceTree = "<group>"; };
+		483505886F181CF33407372A86DA7A53 /* DawnAnimationDissolve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDissolve.swift; path = Sources/Classes/DawnAnimationDissolve.swift; sourceTree = "<group>"; };
+		48B0FACE82BFD13C48D8C1A18AD8C5AF /* DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnSwizzling.swift; path = Sources/Classes/DawnSwizzling.swift; sourceTree = "<group>"; };
+		48F5149E51A318EC91AF788215E3BCDA /* Pods-DawnTransition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DawnTransition_Tests-dummy.m"; sourceTree = "<group>"; };
+		4B7A81CFB823AE61FAC21CDDE863B510 /* DispatchQueue+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Dawn.swift"; path = "Sources/Classes/DispatchQueue+Dawn.swift"; sourceTree = "<group>"; };
+		4C2E7DE2759AE41FFC6BF8DCBC348001 /* DawnTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DawnTransition.modulemap; sourceTree = "<group>"; };
+		55DF0B0332DC0CF7DE4005CB9A5760C8 /* DawnAnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationProducer.swift; path = Sources/Classes/DawnAnimationProducer.swift; sourceTree = "<group>"; };
+		58AE35D7BF39FAA7EA2B2ADC3F54E7F3 /* Pods-DawnTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D0834C4D80497CC7A84D406A4D7D581 /* DawnTodayGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTodayGestureRecognizer.swift; path = Sources/Classes/DawnTodayGestureRecognizer.swift; sourceTree = "<group>"; };
+		5E50521F00532FDE2D89E0C9288EF411 /* Pods-DawnTransition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DawnTransition_Example-dummy.m"; sourceTree = "<group>"; };
+		5ECADF716C93A47EB4172DB12A17407E /* DawnAnimationDrawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDrawer.swift; path = Sources/Classes/DawnAnimationDrawer.swift; sourceTree = "<group>"; };
+		64F57A1928E978682C3F5F6FAE472D26 /* UIViewController+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Dawn.swift"; path = "Sources/Classes/UIViewController+Dawn.swift"; sourceTree = "<group>"; };
+		6E152D0419017C3934ACD28699F65DDD /* DawnTransition-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DawnTransition-Info.plist"; sourceTree = "<group>"; };
+		73566ABBCB73836428BE755DEF151B27 /* DawnAnimationCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCube.swift; path = Sources/Classes/DawnAnimationCube.swift; sourceTree = "<group>"; };
+		75287A26293A546545D48F0ED021881A /* DawnTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Interactive.swift"; path = "Sources/Classes/DawnTransition+Interactive.swift"; sourceTree = "<group>"; };
+		8CB3884B083E75E880486DA0F9080350 /* Pods-DawnTransition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DawnTransition_Example-umbrella.h"; sourceTree = "<group>"; };
+		8F4D7167A0B412C7B766C7706B0988BC /* Pods-DawnTransition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DawnTransition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		97A6A6D8D87C167BD34076725128A1E4 /* UINavigationController+DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+DawnSwizzling.swift"; path = "Sources/Classes/UINavigationController+DawnSwizzling.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DCF318BFAAB33F794CF06B96591CDAD /* Pods-NeonPopupKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeonPopupKit_Tests.modulemap"; sourceTree = "<group>"; };
-		9E6AB59337BCB09BEF02E4B6200753C9 /* Pods-NeonPopupKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeonPopupKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A1602B9B838A043B4F8018A78361D292 /* NeonPopupKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeonPopupKit-umbrella.h"; sourceTree = "<group>"; };
-		B8D4BC46534539F95A6180A9843F57C3 /* NeonPopupKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NeonPopupKit.modulemap; sourceTree = "<group>"; };
-		C2466D9FAD90079A9179F3EB04CF4B2D /* NeonPopupKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeonPopupKit.debug.xcconfig; sourceTree = "<group>"; };
-		CDFE8ED2E890F29838E514514A0E059D /* Pods-NeonPopupKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeonPopupKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		CEAFE60E98AD4C1804F2CD749568964D /* Pods-NeonPopupKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeonPopupKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D20C0B576DBD8E430ED203C01460E5DA /* PopupKeyboardResponsive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupKeyboardResponsive.swift; path = PopupKit/Classes/PopupKeyboardResponsive.swift; sourceTree = "<group>"; };
-		D39AB47143A608EA5B2F0D5FDA5CBF24 /* Pods-NeonPopupKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeonPopupKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D594D16651440DF0355421F2959A7B7B /* PopupPresetAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupPresetAnimator.swift; path = PopupKit/Classes/PopupPresetAnimator.swift; sourceTree = "<group>"; };
-		D6B719704E207A0576B8455158C9099C /* Pods-NeonPopupKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeonPopupKit_Example"; path = Pods_NeonPopupKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD18376464FB16BDE32897EA70920AA8 /* NeonPopupKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NeonPopupKit-dummy.m"; sourceTree = "<group>"; };
-		E261FD056B3BDB113DA231E70D540406 /* Pods-NeonPopupKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeonPopupKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E58547C1E87038ACBEBDA74498C8FA3C /* PopupContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupContainer.swift; path = PopupKit/Classes/PopupContainer.swift; sourceTree = "<group>"; };
-		E699AFADAEBB015492B2C0F77E079952 /* PopupPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupPresenter.swift; path = PopupKit/Classes/PopupPresenter.swift; sourceTree = "<group>"; };
-		E849F7CFCD8A7A21E5F8F3E49CA6577D /* PopupPresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupPresentable.swift; path = PopupKit/Classes/PopupPresentable.swift; sourceTree = "<group>"; };
-		EFF0153FDF898F1BB60379BFEA70034B /* Pods-NeonPopupKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeonPopupKit_Example-dummy.m"; sourceTree = "<group>"; };
-		F0A197497DE5C1803ABE43EB4B5A2646 /* NeonPopupKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NeonPopupKit; path = NeonPopupKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F291BD0BD0C3236A126065084E4CB8BA /* PopupAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupAnimationOptions.swift; path = PopupKit/Classes/PopupAnimationOptions.swift; sourceTree = "<group>"; };
-		F5FFFB1F81928775EEAA1AEFD58A97C9 /* PopupChainDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupChainDispatcher.swift; path = PopupKit/Classes/PopupChainDispatcher.swift; sourceTree = "<group>"; };
-		F87607611EEA4574850DE286EC74853E /* Pods-NeonPopupKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeonPopupKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A508AC8B02D6FCDCAA8C46D3B2DC0F9B /* DawnTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.debug.xcconfig; sourceTree = "<group>"; };
+		AF166DDB0EC390297ED8761A7379D5CB /* Pods-DawnTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Tests.modulemap"; sourceTree = "<group>"; };
+		B8156F1697DE3C24A91AD8DE335CA48A /* Pods-DawnTransition_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DawnTransition_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8D0B794AAF121E1CF8C551F965F749A /* DawnTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.release.xcconfig; sourceTree = "<group>"; };
+		BA48ED696CB22D8780A21DF0ED4F8DAD /* UIViewController+GoBack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+GoBack.swift"; path = "Sources/Classes/UIViewController+GoBack.swift"; sourceTree = "<group>"; };
+		BA4E1EF93BA2D7CD6AB835F149DEC568 /* DawnAnimationTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTransform.swift; path = Sources/Classes/DawnAnimationTransform.swift; sourceTree = "<group>"; };
+		BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DawnTransition; path = DawnTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A259ECD18E07442898CCF50ABF1ECC /* Pods-DawnTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CD37EF893384061A4CDE9E8B87154778 /* UIView+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dawn.swift"; path = "Sources/Classes/UIView+Dawn.swift"; sourceTree = "<group>"; };
+		CFFF19F6034B2FD839AE581CF5C1AC82 /* DawnAnimationWechatApplet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationWechatApplet.swift; path = Sources/Classes/DawnAnimationWechatApplet.swift; sourceTree = "<group>"; };
+		D6D10E3365BF122EDE9243903A6036BD /* DawnTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-umbrella.h"; sourceTree = "<group>"; };
+		D8A7976967F72D28D955DEAC84B63636 /* DawnTransitionAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionAdjustable.swift; path = Sources/Classes/DawnTransitionAdjustable.swift; sourceTree = "<group>"; };
+		DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Example"; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADF70EA8C81AD05C2BE7A35ABBDC17D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DCAA6534E2E5AF861F6D532688106283 /* DawnAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationType.swift; path = Sources/Classes/DawnAnimationType.swift; sourceTree = "<group>"; };
+		DEF4FF3D8F736430042B8FD14C011FF4 /* DawnTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UINavigationControllerDelegate.swift"; path = "Sources/Classes/DawnTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		E49B4B52524535297B28587D53EDB7C7 /* DawnAnimationCapable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCapable.swift; path = Sources/Classes/DawnAnimationCapable.swift; sourceTree = "<group>"; };
+		E66E67D45762D2BA97FAC0B250254C6E /* DawnPropertyAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnPropertyAnimator.swift; path = Sources/Classes/DawnPropertyAnimator.swift; sourceTree = "<group>"; };
+		EAB7E7CD0EB6EEFA588D0E0DEF6D74C7 /* DawnAnimationSpot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationSpot.swift; path = Sources/Classes/DawnAnimationSpot.swift; sourceTree = "<group>"; };
+		EABC180C1336EE7949CCA83D403AAC34 /* Pods-DawnTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1805BA03227DFE1CFD12CB53928F2B /* DawnTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-prefix.pch"; sourceTree = "<group>"; };
+		EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Tests"; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DawnTransition_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F9B210CE92CC813745E86D313503D3C0 /* DawnTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnTransition-dummy.m"; sourceTree = "<group>"; };
+		FC5900D7BF73C82E1F8575AC86AC1ACC /* UIView+DawnPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DawnPanGestureRecognizer.swift"; path = "Sources/Classes/UIView+DawnPanGestureRecognizer.swift"; sourceTree = "<group>"; };
+		FCD708C75EAEDB949360D112751A843F /* DawnCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnCompatible.swift; path = Sources/Classes/DawnCompatible.swift; sourceTree = "<group>"; };
+		FD72BF9924AFC0E0917C20299B313ADE /* Pods-DawnTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Example.modulemap"; sourceTree = "<group>"; };
+		FFF906234FF6FE7761300867B6F94A4D /* Pods-DawnTransition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DawnTransition_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E9FED94D4A868A5CB6FD3B28F591E1B /* Frameworks */ = {
+		13E4CCB0D0C5880ED9EA0B867B5AF042 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A2FE91235CF80E9A93B0B21E1265D8 /* Foundation.framework in Frameworks */,
+				285C032A27EFAE9625E1CE5A727600A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8F5FEB8A80C1A4F1A2DFD84765BC63E /* Frameworks */ = {
+		7D922B9F58F4B0D9ADB828A9182C9AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1957E4EFE38CA2B152F8C91A67C59D76 /* Foundation.framework in Frameworks */,
+				A7C51F25EF848B2290AC9D1398064BA2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF44D71EEFD7CB6DAEA704DC4C1DF1EE /* Frameworks */ = {
+		97BDBA1EE6EE1C89DC85AB5EDA93A40A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7FF4C5DD564A1E7C551D17838E0AD3 /* Foundation.framework in Frameworks */,
+				D9A0F947D8C0230EF0F8B84AA25B4E81 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02F33408D1D716100C6F53D3EC56A626 /* Pods-NeonPopupKit_Tests */ = {
+		18258145C0C9A85058732A337597C0E5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DCF318BFAAB33F794CF06B96591CDAD /* Pods-NeonPopupKit_Tests.modulemap */,
-				F87607611EEA4574850DE286EC74853E /* Pods-NeonPopupKit_Tests-acknowledgements.markdown */,
-				7EB260A805002CCD31CDF37740549CB4 /* Pods-NeonPopupKit_Tests-acknowledgements.plist */,
-				CDFE8ED2E890F29838E514514A0E059D /* Pods-NeonPopupKit_Tests-dummy.m */,
-				91C842A99ECFD1DC4C5A0D08EF72C401 /* Pods-NeonPopupKit_Tests-Info.plist */,
-				7D1D2F924D7AF5C7AD6DB393ED53C645 /* Pods-NeonPopupKit_Tests-umbrella.h */,
-				D39AB47143A608EA5B2F0D5FDA5CBF24 /* Pods-NeonPopupKit_Tests.debug.xcconfig */,
-				0C2A33894EB1D1499351FC9EEE38917B /* Pods-NeonPopupKit_Tests.release.xcconfig */,
+				8EC4DAC7A8740B6279C9B796DBFDF012 /* Pods-DawnTransition_Example */,
+				AC1C23AF7B1E363668E1A84F1CCF93B3 /* Pods-DawnTransition_Tests */,
 			);
-			name = "Pods-NeonPopupKit_Tests";
-			path = "Target Support Files/Pods-NeonPopupKit_Tests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		217732B766E33A611276CF2DEDC70E62 /* Pod */ = {
+		1825C70791DEF6876952783C67485876 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				573B888E982564DE5740AEA42E06B30A /* LICENSE */,
-				40E56D997E6E2EE853413CAC391547A9 /* NeonPopupKit.podspec */,
-				6CCF0CD4347DC2675DEB4472F016EE2B /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		36D614F9E8225068D402C405B9C0A6F9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B8D4BC46534539F95A6180A9843F57C3 /* NeonPopupKit.modulemap */,
-				DD18376464FB16BDE32897EA70920AA8 /* NeonPopupKit-dummy.m */,
-				0FEF36C036254C8DAF11411CD1AE8880 /* NeonPopupKit-Info.plist */,
-				695DE50864E28478DB547316A6C9985E /* NeonPopupKit-prefix.pch */,
-				A1602B9B838A043B4F8018A78361D292 /* NeonPopupKit-umbrella.h */,
-				C2466D9FAD90079A9179F3EB04CF4B2D /* NeonPopupKit.debug.xcconfig */,
-				4FDF80A2AA0F5E8848D1923CA8E4B0F6 /* NeonPopupKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NeonPopupKit";
-			sourceTree = "<group>";
-		};
-		523F576D5FE2BB44612E23BC859B23D7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B19C565E28854FEDE63A7700E652E331 /* NeonPopupKit */,
+				E533CD2E337570A718012A3EA80BD6F5 /* DawnTransition */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6BA39F4C723CCD73F75BE2F95CD6A3B0 /* Pods-NeonPopupKit_Example */ = {
+		1C20D6BE4A45B50DA8FD5E32CE31DABB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				845D7FC0F8082715F18553E054394D51 /* Pods-NeonPopupKit_Example.modulemap */,
-				CEAFE60E98AD4C1804F2CD749568964D /* Pods-NeonPopupKit_Example-acknowledgements.markdown */,
-				9E6AB59337BCB09BEF02E4B6200753C9 /* Pods-NeonPopupKit_Example-acknowledgements.plist */,
-				EFF0153FDF898F1BB60379BFEA70034B /* Pods-NeonPopupKit_Example-dummy.m */,
-				0CC595992B8DDD93C6DBB39C6FE93832 /* Pods-NeonPopupKit_Example-frameworks.sh */,
-				7F59A46D794DE5E820E7DC076DDAEC34 /* Pods-NeonPopupKit_Example-Info.plist */,
-				6D25275112BC5C39B0BB3941DD9F0D79 /* Pods-NeonPopupKit_Example-umbrella.h */,
-				E261FD056B3BDB113DA231E70D540406 /* Pods-NeonPopupKit_Example.debug.xcconfig */,
-				39D47FB98F5BB011514EB89B44CB4C3E /* Pods-NeonPopupKit_Example.release.xcconfig */,
+				2282C2EE765AA3ACB39D7F4CCAE9F787 /* DawnTransition.podspec */,
+				DADF70EA8C81AD05C2BE7A35ABBDC17D /* LICENSE */,
+				14063BB5BC9726CA1FD79DF12654A306 /* README.md */,
 			);
-			name = "Pods-NeonPopupKit_Example";
-			path = "Target Support Files/Pods-NeonPopupKit_Example";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		B19C565E28854FEDE63A7700E652E331 /* NeonPopupKit */ = {
+		30DE882618073C865CA18B019A709814 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1ACF8C1A8E5643D2EBBB13356813B22A /* PopupAnimatable.swift */,
-				F291BD0BD0C3236A126065084E4CB8BA /* PopupAnimationOptions.swift */,
-				525D90FD2004C35ACFBF1A5DF707E0A1 /* PopupChainContextual.swift */,
-				F5FFFB1F81928775EEAA1AEFD58A97C9 /* PopupChainDispatcher.swift */,
-				84F985B3B8E116671DCBA5E2BEC423C8 /* PopupChainNode.swift */,
-				77C339CD4A6D6030EA7E15804B612D0E /* PopupChainRepresentable.swift */,
-				380448734B4C16637BD91A2D2D247192 /* PopupConfiguration.swift */,
-				E58547C1E87038ACBEBDA74498C8FA3C /* PopupContainer.swift */,
-				79BEEA459A0A9E65D8AB7799ED769420 /* PopupCoverView.swift */,
-				9CE7B71F90B2920247C580EA8560BD65 /* PopupExtensions.swift */,
-				D20C0B576DBD8E430ED203C01460E5DA /* PopupKeyboardResponsive.swift */,
-				1CF81FFB297A9EEAB7E08FA4DC0A208D /* PopupKeyboardTracker.swift */,
-				E849F7CFCD8A7A21E5F8F3E49CA6577D /* PopupPresentable.swift */,
-				E699AFADAEBB015492B2C0F77E079952 /* PopupPresenter.swift */,
-				D594D16651440DF0355421F2959A7B7B /* PopupPresetAnimator.swift */,
-				217732B766E33A611276CF2DEDC70E62 /* Pod */,
-				36D614F9E8225068D402C405B9C0A6F9 /* Support Files */,
+				BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */,
+				DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */,
+				EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */,
 			);
-			name = NeonPopupKit;
-			path = ../..;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EC4DAC7A8740B6279C9B796DBFDF012 /* Pods-DawnTransition_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FD72BF9924AFC0E0917C20299B313ADE /* Pods-DawnTransition_Example.modulemap */,
+				B8156F1697DE3C24A91AD8DE335CA48A /* Pods-DawnTransition_Example-acknowledgements.markdown */,
+				1E512B96FB9C653A8A8D36193B5DCD00 /* Pods-DawnTransition_Example-acknowledgements.plist */,
+				5E50521F00532FDE2D89E0C9288EF411 /* Pods-DawnTransition_Example-dummy.m */,
+				FFF906234FF6FE7761300867B6F94A4D /* Pods-DawnTransition_Example-frameworks.sh */,
+				2D6CF4EDD195171E796812F1AECB399C /* Pods-DawnTransition_Example-Info.plist */,
+				8CB3884B083E75E880486DA0F9080350 /* Pods-DawnTransition_Example-umbrella.h */,
+				EABC180C1336EE7949CCA83D403AAC34 /* Pods-DawnTransition_Example.debug.xcconfig */,
+				00C2DCF4C9C8EB276A74419528DC8082 /* Pods-DawnTransition_Example.release.xcconfig */,
+			);
+			name = "Pods-DawnTransition_Example";
+			path = "Target Support Files/Pods-DawnTransition_Example";
+			sourceTree = "<group>";
+		};
+		AC1C23AF7B1E363668E1A84F1CCF93B3 /* Pods-DawnTransition_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF166DDB0EC390297ED8761A7379D5CB /* Pods-DawnTransition_Tests.modulemap */,
+				8F4D7167A0B412C7B766C7706B0988BC /* Pods-DawnTransition_Tests-acknowledgements.markdown */,
+				0ECA59FA4F18E9685319E2EEAB9DF61D /* Pods-DawnTransition_Tests-acknowledgements.plist */,
+				48F5149E51A318EC91AF788215E3BCDA /* Pods-DawnTransition_Tests-dummy.m */,
+				481F575376F62F97C67DFFAFAF667F66 /* Pods-DawnTransition_Tests-Info.plist */,
+				F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */,
+				58AE35D7BF39FAA7EA2B2ADC3F54E7F3 /* Pods-DawnTransition_Tests.debug.xcconfig */,
+				C8A259ECD18E07442898CCF50ABF1ECC /* Pods-DawnTransition_Tests.release.xcconfig */,
+			);
+			name = "Pods-DawnTransition_Tests";
+			path = "Target Support Files/Pods-DawnTransition_Tests";
+			sourceTree = "<group>";
+		};
+		C9C820F6AE8963DFC5831105C3DEE935 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2E7DE2759AE41FFC6BF8DCBC348001 /* DawnTransition.modulemap */,
+				F9B210CE92CC813745E86D313503D3C0 /* DawnTransition-dummy.m */,
+				6E152D0419017C3934ACD28699F65DDD /* DawnTransition-Info.plist */,
+				EC1805BA03227DFE1CFD12CB53928F2B /* DawnTransition-prefix.pch */,
+				D6D10E3365BF122EDE9243903A6036BD /* DawnTransition-umbrella.h */,
+				A508AC8B02D6FCDCAA8C46D3B2DC0F9B /* DawnTransition.debug.xcconfig */,
+				B8D0B794AAF121E1CF8C551F965F749A /* DawnTransition.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DawnTransition";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				523F576D5FE2BB44612E23BC859B23D7 /* Development Pods */,
+				1825C70791DEF6876952783C67485876 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DFCA1E161F76669A5F9CA55BB81B5749 /* Products */,
-				FDC06263FE2883D97979190196EB92FD /* Targets Support Files */,
+				30DE882618073C865CA18B019A709814 /* Products */,
+				18258145C0C9A85058732A337597C0E5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,16 +266,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFCA1E161F76669A5F9CA55BB81B5749 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F0A197497DE5C1803ABE43EB4B5A2646 /* NeonPopupKit */,
-				D6B719704E207A0576B8455158C9099C /* Pods-NeonPopupKit_Example */,
-				4CADCC140DF337CB05D67DB2007B5D57 /* Pods-NeonPopupKit_Tests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,99 +274,132 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FDC06263FE2883D97979190196EB92FD /* Targets Support Files */ = {
+		E533CD2E337570A718012A3EA80BD6F5 /* DawnTransition */ = {
 			isa = PBXGroup;
 			children = (
-				6BA39F4C723CCD73F75BE2F95CD6A3B0 /* Pods-NeonPopupKit_Example */,
-				02F33408D1D716100C6F53D3EC56A626 /* Pods-NeonPopupKit_Tests */,
+				E49B4B52524535297B28587D53EDB7C7 /* DawnAnimationCapable.swift */,
+				452A115CF7D3EC4C1FBEDFC4C5E11258 /* DawnAnimationCard.swift */,
+				73566ABBCB73836428BE755DEF151B27 /* DawnAnimationCube.swift */,
+				38FB38719C1CA4691927F952DB755232 /* DawnAnimationDiffuse.swift */,
+				483505886F181CF33407372A86DA7A53 /* DawnAnimationDissolve.swift */,
+				5ECADF716C93A47EB4172DB12A17407E /* DawnAnimationDrawer.swift */,
+				2473C34C2D0EA3264DDFC9EF2E961B81 /* DawnAnimationFlip.swift */,
+				3272216559B2E33D626A5FD3FF1A498C /* DawnAnimationGroup.swift */,
+				55DF0B0332DC0CF7DE4005CB9A5760C8 /* DawnAnimationProducer.swift */,
+				EAB7E7CD0EB6EEFA588D0E0DEF6D74C7 /* DawnAnimationSpot.swift */,
+				BA4E1EF93BA2D7CD6AB835F149DEC568 /* DawnAnimationTransform.swift */,
+				234D0AD75EB112F8EC118C11597B83C6 /* DawnAnimationTurn.swift */,
+				DCAA6534E2E5AF861F6D532688106283 /* DawnAnimationType.swift */,
+				CFFF19F6034B2FD839AE581CF5C1AC82 /* DawnAnimationWechatApplet.swift */,
+				FCD708C75EAEDB949360D112751A843F /* DawnCompatible.swift */,
+				E66E67D45762D2BA97FAC0B250254C6E /* DawnPropertyAnimator.swift */,
+				48B0FACE82BFD13C48D8C1A18AD8C5AF /* DawnSwizzling.swift */,
+				5D0834C4D80497CC7A84D406A4D7D581 /* DawnTodayGestureRecognizer.swift */,
+				332E7BFCE929A9CD9627CADB71818CB8 /* DawnTransition.swift */,
+				38853916407A3F161D9446E215C8C6EB /* DawnTransition+Animate.swift */,
+				18D63FC179FAC230C250E8AA06976EAE /* DawnTransition+Complete.swift */,
+				75287A26293A546545D48F0ED021881A /* DawnTransition+Interactive.swift */,
+				DEF4FF3D8F736430042B8FD14C011FF4 /* DawnTransition+UINavigationControllerDelegate.swift */,
+				0BB4A21576B3779AB0DEE2925E10A4F2 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */,
+				D8A7976967F72D28D955DEAC84B63636 /* DawnTransitionAdjustable.swift */,
+				37F5F80ADEC87D772D2A124F292DEF11 /* DawnTransitionModifiers.swift */,
+				4B7A81CFB823AE61FAC21CDDE863B510 /* DispatchQueue+Dawn.swift */,
+				97A6A6D8D87C167BD34076725128A1E4 /* UINavigationController+DawnSwizzling.swift */,
+				CD37EF893384061A4CDE9E8B87154778 /* UIView+Dawn.swift */,
+				FC5900D7BF73C82E1F8575AC86AC1ACC /* UIView+DawnPanGestureRecognizer.swift */,
+				64F57A1928E978682C3F5F6FAE472D26 /* UIViewController+Dawn.swift */,
+				BA48ED696CB22D8780A21DF0ED4F8DAD /* UIViewController+GoBack.swift */,
+				1C20D6BE4A45B50DA8FD5E32CE31DABB /* Pod */,
+				C9C820F6AE8963DFC5831105C3DEE935 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = DawnTransition;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12E7720184884C521FA70432C159B4D3 /* Headers */ = {
+		16635274A07E50C2A49613A8B43588FF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20DE65458CF6332EAD3F653A3A434F8 /* Pods-NeonPopupKit_Tests-umbrella.h in Headers */,
+				EEA36A8E093716EF24EC3523AF9BB72A /* Pods-DawnTransition_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3024615993DD191D38549F491FE52657 /* Headers */ = {
+		33603AC39A189270B1D97510213BDDE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D273571102240CB945A7911583FCC76A /* Pods-NeonPopupKit_Example-umbrella.h in Headers */,
+				E7B4E6B3239BE7C339B9B8BAA084B6AA /* DawnTransition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		969B459B8215C2388BD71150F50F7B46 /* Headers */ = {
+		B859D6769C8E81C52B384FAF31908317 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C680B1563A92FA453811188CB2B2C4 /* NeonPopupKit-umbrella.h in Headers */,
+				25BB2DFD53C02966E2B3BAD22A4E6C89 /* Pods-DawnTransition_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3F4D81BB2657210FACEBF2FAB758F3AB /* Pods-NeonPopupKit_Tests */ = {
+		14FDBF1AB05729E04DB219B25751A5F0 /* Pods-DawnTransition_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F26DD66BA0ACA8E55EC9624D444AD9DC /* Build configuration list for PBXNativeTarget "Pods-NeonPopupKit_Tests" */;
+			buildConfigurationList = CAF8F9F3D2AF4981AE56ED28933DF792 /* Build configuration list for PBXNativeTarget "Pods-DawnTransition_Example" */;
 			buildPhases = (
-				12E7720184884C521FA70432C159B4D3 /* Headers */,
-				D14E05E8C554A6983628B525CA780B43 /* Sources */,
-				0E9FED94D4A868A5CB6FD3B28F591E1B /* Frameworks */,
-				3AC34A3640A79C0FF5E977BE30479E56 /* Resources */,
+				16635274A07E50C2A49613A8B43588FF /* Headers */,
+				FC257B4DD76664D96DC55B3D7DD82A13 /* Sources */,
+				7D922B9F58F4B0D9ADB828A9182C9AFF /* Frameworks */,
+				FF72C008F5474F3367C3B603E2CA7E4B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				96ACE57EF2FA4F607F81025756C12B69 /* PBXTargetDependency */,
+				BF52EBD78794E7A1F821F9012CE610F5 /* PBXTargetDependency */,
 			);
-			name = "Pods-NeonPopupKit_Tests";
-			productName = Pods_NeonPopupKit_Tests;
-			productReference = 4CADCC140DF337CB05D67DB2007B5D57 /* Pods-NeonPopupKit_Tests */;
+			name = "Pods-DawnTransition_Example";
+			productName = Pods_DawnTransition_Example;
+			productReference = DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */;
 			productType = "com.apple.product-type.framework";
 		};
-		96E59EEE8E3D70CFCF76416CAC6C6BD0 /* Pods-NeonPopupKit_Example */ = {
+		A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA885191334C62641E0524FA56E052B9 /* Build configuration list for PBXNativeTarget "Pods-NeonPopupKit_Example" */;
+			buildConfigurationList = 3825AE6332D4D4BC9C44DCDC8093C989 /* Build configuration list for PBXNativeTarget "DawnTransition" */;
 			buildPhases = (
-				3024615993DD191D38549F491FE52657 /* Headers */,
-				9841A25FE08FE88C20E0B3E1A0A63C46 /* Sources */,
-				FF44D71EEFD7CB6DAEA704DC4C1DF1EE /* Frameworks */,
-				ACD9171B4AEC83DA99126DDB697CD4AC /* Resources */,
+				33603AC39A189270B1D97510213BDDE3 /* Headers */,
+				18DBE47360DB78A266F18DEA06BECC76 /* Sources */,
+				13E4CCB0D0C5880ED9EA0B867B5AF042 /* Frameworks */,
+				26EC40C44729CC171F26502B446629CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30D9BCE28354A89470E57F9DF03482C3 /* PBXTargetDependency */,
 			);
-			name = "Pods-NeonPopupKit_Example";
-			productName = Pods_NeonPopupKit_Example;
-			productReference = D6B719704E207A0576B8455158C9099C /* Pods-NeonPopupKit_Example */;
+			name = DawnTransition;
+			productName = DawnTransition;
+			productReference = BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */;
 			productType = "com.apple.product-type.framework";
 		};
-		E0C68D9B5AE536771298B9AC3603106A /* NeonPopupKit */ = {
+		B33C2A2F4AFF723AF68EC01180F549DC /* Pods-DawnTransition_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17733CA2D067F23844CD4628D1D6E3A6 /* Build configuration list for PBXNativeTarget "NeonPopupKit" */;
+			buildConfigurationList = 73477356A06594BB24A1366E2CBEC836 /* Build configuration list for PBXNativeTarget "Pods-DawnTransition_Tests" */;
 			buildPhases = (
-				969B459B8215C2388BD71150F50F7B46 /* Headers */,
-				5CB06E6A30E27E1FEFE096F2EEBE799D /* Sources */,
-				F8F5FEB8A80C1A4F1A2DFD84765BC63E /* Frameworks */,
-				4A3D0AF972BA57DD9AD0971025EEF7DF /* Resources */,
+				B859D6769C8E81C52B384FAF31908317 /* Headers */,
+				C72537E159262435E852E6C30AB3194D /* Sources */,
+				97BDBA1EE6EE1C89DC85AB5EDA93A40A /* Frameworks */,
+				D2BC6E87DC97B55A18B53F3800823180 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9EB835EDB378F650EB1DDAD13D287B7C /* PBXTargetDependency */,
 			);
-			name = NeonPopupKit;
-			productName = NeonPopupKit;
-			productReference = F0A197497DE5C1803ABE43EB4B5A2646 /* NeonPopupKit */;
+			name = "Pods-DawnTransition_Tests";
+			productName = Pods_DawnTransition_Tests;
+			productReference = EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -361,7 +412,7 @@
 				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -371,33 +422,33 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DFCA1E161F76669A5F9CA55BB81B5749 /* Products */;
+			productRefGroup = 30DE882618073C865CA18B019A709814 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0C68D9B5AE536771298B9AC3603106A /* NeonPopupKit */,
-				96E59EEE8E3D70CFCF76416CAC6C6BD0 /* Pods-NeonPopupKit_Example */,
-				3F4D81BB2657210FACEBF2FAB758F3AB /* Pods-NeonPopupKit_Tests */,
+				A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */,
+				14FDBF1AB05729E04DB219B25751A5F0 /* Pods-DawnTransition_Example */,
+				B33C2A2F4AFF723AF68EC01180F549DC /* Pods-DawnTransition_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3AC34A3640A79C0FF5E977BE30479E56 /* Resources */ = {
+		26EC40C44729CC171F26502B446629CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A3D0AF972BA57DD9AD0971025EEF7DF /* Resources */ = {
+		D2BC6E87DC97B55A18B53F3800823180 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD9171B4AEC83DA99126DDB697CD4AC /* Resources */ = {
+		FF72C008F5474F3367C3B603E2CA7E4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,68 +458,86 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CB06E6A30E27E1FEFE096F2EEBE799D /* Sources */ = {
+		18DBE47360DB78A266F18DEA06BECC76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC40AE3B976D20B4DA9A177885C5A0B /* NeonPopupKit-dummy.m in Sources */,
-				35695A1B3A66737D479D03C7E571F047 /* PopupAnimatable.swift in Sources */,
-				11B7C3867C33DBB1D98C79242DAFD491 /* PopupAnimationOptions.swift in Sources */,
-				4D16E263165700AE56248FBD6A858EE5 /* PopupChainContextual.swift in Sources */,
-				19679E1794A33996F21EDA2989E52232 /* PopupChainDispatcher.swift in Sources */,
-				7BD671341F3CCB63E8BB89F822853828 /* PopupChainNode.swift in Sources */,
-				E2376541E428D5E5422F6286231C8A61 /* PopupChainRepresentable.swift in Sources */,
-				BAF341219D476EA779D8210DC3C8B1FF /* PopupConfiguration.swift in Sources */,
-				933CD31F47A945FABA04C0418295111D /* PopupContainer.swift in Sources */,
-				D6C2762506803EC93C7239DAC2137A25 /* PopupCoverView.swift in Sources */,
-				D64667887750403733871F8D4B7F5AF8 /* PopupExtensions.swift in Sources */,
-				E44E5688C71029C15A18F8EF87BBAADA /* PopupKeyboardResponsive.swift in Sources */,
-				EDC8AC898134B984F9C373653043103E /* PopupKeyboardTracker.swift in Sources */,
-				E6EC0511E4CC0EC06947CCB403655645 /* PopupPresentable.swift in Sources */,
-				923FD36CBC68B88C4AEA56A61629F174 /* PopupPresenter.swift in Sources */,
-				CB81F96A553AC47B23C50CCC18CBB4D6 /* PopupPresetAnimator.swift in Sources */,
+				D632711D121D00E1956185C80F4DB0B1 /* DawnAnimationCapable.swift in Sources */,
+				87F50DB52816305FE214D1A5B0DA0CAF /* DawnAnimationCard.swift in Sources */,
+				F0B170C3031B8432D0793083C55B6944 /* DawnAnimationCube.swift in Sources */,
+				D096C59E66384B71BEEDAD325DE4A017 /* DawnAnimationDiffuse.swift in Sources */,
+				D9E47B1F656464E95E2A4F02BE658092 /* DawnAnimationDissolve.swift in Sources */,
+				6C8CE85505B424AF4ACC119BF2E05710 /* DawnAnimationDrawer.swift in Sources */,
+				807C29DB6B758F5C25B7A8F303120593 /* DawnAnimationFlip.swift in Sources */,
+				D2D397344812A49B8132F474AE8CE49F /* DawnAnimationGroup.swift in Sources */,
+				8FC40E2EA4A1C6070594350947256D24 /* DawnAnimationProducer.swift in Sources */,
+				12D1D7617925ED21A0C606D82D3BA452 /* DawnAnimationSpot.swift in Sources */,
+				63CF4B554355DB831465C7B79B3D3504 /* DawnAnimationTransform.swift in Sources */,
+				22B46014F9555B8EC1DC779C94746F87 /* DawnAnimationTurn.swift in Sources */,
+				6A5424736E2A4C3AF3B0B0F17A106716 /* DawnAnimationType.swift in Sources */,
+				42A1DF0032034219B9BF34EA2A9FA8DA /* DawnAnimationWechatApplet.swift in Sources */,
+				26A7CC9C0DE2F9F6BD21ADAF262FF01F /* DawnCompatible.swift in Sources */,
+				A71528931EEB9D2D75A01433B9E9E572 /* DawnPropertyAnimator.swift in Sources */,
+				66C2E02F46F98FA1FD35BEA6C93239D4 /* DawnSwizzling.swift in Sources */,
+				DCBB5542C21253EEA113BA75BE2FFA63 /* DawnTodayGestureRecognizer.swift in Sources */,
+				6A098840269DBB7BCD938557A5CCF02A /* DawnTransition.swift in Sources */,
+				D1157276791F91A72DC5DDC2CD9A7308 /* DawnTransition+Animate.swift in Sources */,
+				2D964051D0F58B47176847C5EDE8231D /* DawnTransition+Complete.swift in Sources */,
+				272CCEA794043602BE7A125C17AAA6E9 /* DawnTransition+Interactive.swift in Sources */,
+				50B610316FD09C9DF420B7DC068CD31C /* DawnTransition+UINavigationControllerDelegate.swift in Sources */,
+				081BEA5EACC6F5366325F878993165D9 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				9E3D1D3C17795D2524564B97F3345ADF /* DawnTransition-dummy.m in Sources */,
+				7C10B880AC4B147D0988C9EDF252084F /* DawnTransitionAdjustable.swift in Sources */,
+				6886DCE04923C237BCD9679AF8C37868 /* DawnTransitionModifiers.swift in Sources */,
+				6CBF4EC074247A9559660A605D91FCC7 /* DispatchQueue+Dawn.swift in Sources */,
+				45549A7F8BA1DE1611A6455C273987D6 /* UINavigationController+DawnSwizzling.swift in Sources */,
+				6DC66F77BB02CB5B4F7D7355694E3EAD /* UIView+Dawn.swift in Sources */,
+				6F28D51C05A380765B9BFFEE1EA8DE19 /* UIView+DawnPanGestureRecognizer.swift in Sources */,
+				CD7290818B58393199276020DE010BC1 /* UIViewController+Dawn.swift in Sources */,
+				2FB920061A3DB0D4EB268AB86F26BBD3 /* UIViewController+GoBack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9841A25FE08FE88C20E0B3E1A0A63C46 /* Sources */ = {
+		C72537E159262435E852E6C30AB3194D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8006404E68A140F41133F20E1BC2B151 /* Pods-NeonPopupKit_Example-dummy.m in Sources */,
+				60478C39BC6FCECF86BC14FAD11DF06D /* Pods-DawnTransition_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14E05E8C554A6983628B525CA780B43 /* Sources */ = {
+		FC257B4DD76664D96DC55B3D7DD82A13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71651CA62D292E111E894F76B20CC04B /* Pods-NeonPopupKit_Tests-dummy.m in Sources */,
+				8D4EA28C01F28D99CCB6C03550292656 /* Pods-DawnTransition_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30D9BCE28354A89470E57F9DF03482C3 /* PBXTargetDependency */ = {
+		9EB835EDB378F650EB1DDAD13D287B7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = NeonPopupKit;
-			target = E0C68D9B5AE536771298B9AC3603106A /* NeonPopupKit */;
-			targetProxy = 96AFCB1A30EAE00C7A3F72A78E5A8D45 /* PBXContainerItemProxy */;
+			name = "Pods-DawnTransition_Example";
+			target = 14FDBF1AB05729E04DB219B25751A5F0 /* Pods-DawnTransition_Example */;
+			targetProxy = 5E10BF34E76DA24EE82B899317A46492 /* PBXContainerItemProxy */;
 		};
-		96ACE57EF2FA4F607F81025756C12B69 /* PBXTargetDependency */ = {
+		BF52EBD78794E7A1F821F9012CE610F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-NeonPopupKit_Example";
-			target = 96E59EEE8E3D70CFCF76416CAC6C6BD0 /* Pods-NeonPopupKit_Example */;
-			targetProxy = 9AFB9B7675D60F02B0997E5AE423A99A /* PBXContainerItemProxy */;
+			name = DawnTransition;
+			target = A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */;
+			targetProxy = 08B54D61664A43E839A9331FB90171E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10A0A16F9CCD5932E5EA7D4A22CBA56A /* Debug */ = {
+		0A013436BAEDB4E5EBDC7349EB65EAEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E261FD056B3BDB113DA231E70D540406 /* Pods-NeonPopupKit_Example.debug.xcconfig */;
+			baseConfigurationReference = EABC180C1336EE7949CCA83D403AAC34 /* Pods-DawnTransition_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -480,16 +549,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonPopupKit_Example/Pods-NeonPopupKit_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonPopupKit_Example/Pods-NeonPopupKit_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -503,11 +568,12 @@
 			};
 			name = Debug;
 		};
-		46ACEC2E9D2BB0D5D2C002591D9910AD /* Debug */ = {
+		11A2A028E806BB14B67D081985E48FEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D39AB47143A608EA5B2F0D5FDA5CBF24 /* Pods-NeonPopupKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 00C2DCF4C9C8EB276A74419528DC8082 /* Pods-DawnTransition_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -519,16 +585,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonPopupKit_Tests/Pods-NeonPopupKit_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonPopupKit_Tests/Pods-NeonPopupKit_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -537,15 +599,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		69F7179780557A78DCAE55CB3891EF58 /* Release */ = {
+		2CB7F21B34A0BFED4546315D90BB72C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FDF80A2AA0F5E8848D1923CA8E4B0F6 /* NeonPopupKit.release.xcconfig */;
+			baseConfigurationReference = A508AC8B02D6FCDCAA8C46D3B2DC0F9B /* DawnTransition.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -557,19 +621,88 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/NeonPopupKit/NeonPopupKit-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/DawnTransition/DawnTransition-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/NeonPopupKit/NeonPopupKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/DawnTransition/DawnTransition-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NeonPopupKit/NeonPopupKit.modulemap";
-				PRODUCT_MODULE_NAME = NeonPopupKit;
-				PRODUCT_NAME = NeonPopupKit;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DawnTransition/DawnTransition.modulemap";
+				PRODUCT_MODULE_NAME = DawnTransition;
+				PRODUCT_NAME = DawnTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5964983AA994C6E0B7B465740EFB70A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A259ECD18E07442898CCF50ABF1ECC /* Pods-DawnTransition_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AD7541561F4B11C72A6545CF5417500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D0B794AAF121E1CF8C551F965F749A /* DawnTransition.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/DawnTransition/DawnTransition-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DawnTransition/DawnTransition-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DawnTransition/DawnTransition.modulemap";
+				PRODUCT_MODULE_NAME = DawnTransition;
+				PRODUCT_NAME = DawnTransition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -582,7 +715,7 @@
 			};
 			name = Release;
 		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -632,7 +765,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -644,50 +777,12 @@
 			};
 			name = Release;
 		};
-		88A2521AEBD20A656027E2EA85CC5F24 /* Debug */ = {
+		9906A36641907175C4C99E439B224B1A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2466D9FAD90079A9179F3EB04CF4B2D /* NeonPopupKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/NeonPopupKit/NeonPopupKit-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/NeonPopupKit/NeonPopupKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NeonPopupKit/NeonPopupKit.modulemap";
-				PRODUCT_MODULE_NAME = NeonPopupKit;
-				PRODUCT_NAME = NeonPopupKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9F26B9EB607EE4FCFFACD5DD4564E2E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C2A33894EB1D1499351FC9EEE38917B /* Pods-NeonPopupKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 58AE35D7BF39FAA7EA2B2ADC3F54E7F3 /* Pods-DawnTransition_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -699,16 +794,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonPopupKit_Tests/Pods-NeonPopupKit_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonPopupKit_Tests/Pods-NeonPopupKit_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -717,13 +808,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -776,7 +866,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -789,54 +879,14 @@
 			};
 			name = Debug;
 		};
-		F44E27F74003CB2A37DB5788D7E6D940 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39D47FB98F5BB011514EB89B44CB4C3E /* Pods-NeonPopupKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonPopupKit_Example/Pods-NeonPopupKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonPopupKit_Example/Pods-NeonPopupKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17733CA2D067F23844CD4628D1D6E3A6 /* Build configuration list for PBXNativeTarget "NeonPopupKit" */ = {
+		3825AE6332D4D4BC9C44DCDC8093C989 /* Build configuration list for PBXNativeTarget "DawnTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88A2521AEBD20A656027E2EA85CC5F24 /* Debug */,
-				69F7179780557A78DCAE55CB3891EF58 /* Release */,
+				2CB7F21B34A0BFED4546315D90BB72C9 /* Debug */,
+				8AD7541561F4B11C72A6545CF5417500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -844,26 +894,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA885191334C62641E0524FA56E052B9 /* Build configuration list for PBXNativeTarget "Pods-NeonPopupKit_Example" */ = {
+		73477356A06594BB24A1366E2CBEC836 /* Build configuration list for PBXNativeTarget "Pods-DawnTransition_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10A0A16F9CCD5932E5EA7D4A22CBA56A /* Debug */,
-				F44E27F74003CB2A37DB5788D7E6D940 /* Release */,
+				9906A36641907175C4C99E439B224B1A /* Debug */,
+				5964983AA994C6E0B7B465740EFB70A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F26DD66BA0ACA8E55EC9624D444AD9DC /* Build configuration list for PBXNativeTarget "Pods-NeonPopupKit_Tests" */ = {
+		CAF8F9F3D2AF4981AE56ED28933DF792 /* Build configuration list for PBXNativeTarget "Pods-DawnTransition_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46ACEC2E9D2BB0D5D2C002591D9910AD /* Debug */,
-				9F26B9EB607EE4FCFFACD5DD4564E2E1 /* Release */,
+				0A013436BAEDB4E5EBDC7349EB65EAEB /* Debug */,
+				11A2A028E806BB14B67D081985E48FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

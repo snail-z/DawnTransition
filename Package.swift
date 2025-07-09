@@ -1,33 +1,22 @@
-// swift-tools-version: 6.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
-import PackageDescription
-
-// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
-    name: "PopupKit",
+    name: "DawnTransition",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "PopupKit",  // 对外 `import PopupKit`
-            targets: ["PopupKit"]
+            name: "DawnTransition", 
+            targets: ["DawnTransition"]
         ),
     ],
     targets: [
         .target(
-            name: "PopupKit",
+            name: "DawnTransition",
             dependencies: [],
-            path: "Sources/PopupKit",
+            path: "Sources",
             resources: [.process("PrivacyInfo.xcprivacy")]
-        ),
-        .testTarget(
-            name: "PopupKitTests",
-            dependencies: ["PopupKit"],
-            path: "Tests/PopupKitTests"
         )
     ]
 )
