@@ -1,16 +1,24 @@
 PODS:
   - DawnTransition (1.1.0)
+  - Kingfisher (8.4.0)
+  - SwiftyJSON (5.0.2)
 
 DEPENDENCIES:
-  - DawnTransition (from `../`)
+  - DawnTransition (~> 1.1.0)
+  - Kingfisher
+  - SwiftyJSON
 
-EXTERNAL SOURCES:
-  DawnTransition:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - DawnTransition
+    - Kingfisher
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  DawnTransition: 0508b7e78ba4fdb33077b175705a6bf20ba55abc
+  DawnTransition: 8fe52eb18fa6fdb5c79401be590f2c757f896da1
+  Kingfisher: b14cc47bbfa7a3c150dd12962ee9c86338545629
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
 
-PODFILE CHECKSUM: d0eab4f5cbbee92c57a25eb32b9d0b036feaf318
+PODFILE CHECKSUM: 5da058517563d7fbde044c10063512fe897edb47
 
 COCOAPODS: 1.16.2

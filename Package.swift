@@ -1,3 +1,4 @@
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -15,7 +16,7 @@ let package = Package(
         .target(
             name: "DawnTransition",
             dependencies: [],
-            path: "Sources",
+            path: "Sources/DawnTransition",
             resources: [.process("PrivacyInfo.xcprivacy")]
         )
     ]

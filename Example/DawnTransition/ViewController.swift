@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DawnTransition
 
 class ViewController: UIViewController {
 

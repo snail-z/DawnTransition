@@ -1,9 +1,12 @@
 use_frameworks!
 
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 target 'DawnTransition_Example' do
   pod 'DawnTransition', :path => '../'
+#  pod 'DawnTransition', '~> 1.1.0'
+  pod 'Kingfisher'
+  pod 'SwiftyJSON'
 
   target 'DawnTransition_Tests' do
     inherit! :search_paths
