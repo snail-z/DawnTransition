@@ -2,7 +2,8 @@
 //  DawnAnimationWechatApplet.swift
 //  DawnTransition
 //
-//  Created by zhang on 2024/2/23.
+//  Created by zhang on 2020/2/23.
+//  Copyright (c) 2020 snail-z <haozhang0770@163.com> All rights reserved.
 //
 
 import UIKit
@@ -155,7 +156,7 @@ open class DawnAnimationWechatApplet: DawnAnimationTransform, DawnAnimationCapab
         
         let initialFrame = dawn.transitionContext!.initialFrame(for: dawn.fromViewController!)
         fromSnoptView.frame = initialFrame
-        var initialToFrame = containerView.frame
+        let initialToFrame = containerView.frame
         toSnoptView.frame = initialToFrame
         
         let _size = containerView.frame.size

@@ -16,7 +16,7 @@ let package = Package(
         .target(
             name: "DawnTransition",
             dependencies: [],
-            path: "Sources/DawnTransition",
+            path: "Sources",
             resources: [.process("PrivacyInfo.xcprivacy")]
         )
     ]

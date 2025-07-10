@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'DawnTransition_Example' do
+  pod 'DawnTransition', :path => '../../'
+
+  pod 'DawnKit'
+  
+  target 'DawnTransition_Tests' do
+    inherit! :search_paths
+
+  end
+end

@@ -1,0 +1,6 @@
+framework module DawnKit {
+  umbrella header "DawnKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

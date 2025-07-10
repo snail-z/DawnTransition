@@ -2,8 +2,8 @@
 //  DawnTodayGestureRecognizer.swift
 //  DawnTransition
 //
-//  Created by zhang on 2022/7/6.
-//  Copyright (c) 2022 snail-z <haozhang0770@163.com> All rights reserved.
+//  Created by zhang on 2020/7/6.
+//  Copyright (c) 2020 snail-z <haozhang0770@163.com> All rights reserved.
 //
 
 import UIKit

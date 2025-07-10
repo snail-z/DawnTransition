@@ -2,8 +2,8 @@
 //  UIView+Dawn.swift
 //  DawnTransition
 //
-//  Created by zhang on 2022/6/9.
-//  Copyright (c) 2022 snail-z <haozhang0770@163.com> All rights reserved.
+//  Created by zhang on 2020/6/9.
+//  Copyright (c) 2020 snail-z <haozhang0770@163.com> All rights reserved.
 //
 
 import UIKit
