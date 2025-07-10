@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DawnTransition" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DawnTransition"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DawnTransition/DawnTransition.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "CFNetwork" -framework "DawnTransition" -framework "Kingfisher" -framework "SwiftyJSON" -weak_framework "Combine" -weak_framework "SwiftUI"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DawnTransition/DawnTransition.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "DawnTransition"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
