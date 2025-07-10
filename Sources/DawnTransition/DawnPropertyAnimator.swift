@@ -49,6 +49,7 @@ class DawnPropertyAnimator: UIPercentDrivenInteractiveTransition {
             case .end: block?(true)
             case .start: block?(false)
             case .current: block?(false)
+            @unknown default: block?(true)
             }
         })
     }

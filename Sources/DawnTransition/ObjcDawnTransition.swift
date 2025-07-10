@@ -5,7 +5,7 @@
 //  Created by zhang on 2020/7/25.
 //  Copyright (c) 2020 snail-z <haozhang0770@163.com> All rights reserved.
 //
-//  Objc-桥接入口
+//  Objc-bridge
 
 import UIKit
 

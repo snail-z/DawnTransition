@@ -57,7 +57,7 @@ open class DawnAnimationDrawer: DawnAnimationTransform, DawnAnimationCapable {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
         overlayView.addGestureRecognizer(tap)
         
-        let pan = DawnPanGestureRecognizer(driver: driver, type: .dismiss) { [unowned self] in
+        let pan = DawnPanGestureRecognizer(driver: driver, type: .dismiss) {
             action?()
         }
         pan.isRecognizeWhenEdges = false
@@ -165,7 +165,7 @@ open class DawnAnimationDrawer: DawnAnimationTransform, DawnAnimationCapable {
         
         let initialFrame = dawn.transitionContext!.initialFrame(for: dawn.fromViewController!)
         fromSnoptView.frame = initialFrame
-        var initialToFrame = containerView.frame
+        let initialToFrame = containerView.frame
         toSnoptView.frame = initialToFrame
         
         let _size = containerView.frame.size

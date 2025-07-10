@@ -17,9 +17,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   
   s.source           = { :git => 'https://github.com/snail-z/DawnTransition.git', :tag => s.version.to_s }
-  s.source_files  = ["Sources/**/*.swift"]
+  s.source_files     = ["Sources/**/*.swift"]
   s.resource_bundles = { 'DawnTransition' => ['Sources/PrivacyInfo.xcprivacy'] }
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.requires_arc = true
-  
 end

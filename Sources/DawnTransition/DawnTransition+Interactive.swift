@@ -73,13 +73,13 @@ extension DawnDriver {
 
 public extension Dawn {
 
-    public static let willInteractiveNotification = Notification.Name("dawn.willInteractive.notifi")
-    public static let didInteractivePercentageNotification = Notification.Name("dawn.interactivePercentage.notifi")
-    public static let didFinishInteractiveNotification = Notification.Name("dawn.finishedInteractive.notifi")
+    static let willInteractiveNotification = Notification.Name("dawn.willInteractive.notifi")
+    static let didInteractivePercentageNotification = Notification.Name("dawn.interactivePercentage.notifi")
+    static let didFinishInteractiveNotification = Notification.Name("dawn.finishedInteractive.notifi")
     
-    public static let interactiveIsPresentingKey = "isPresenting"
-    public static let interactivePercentageKey = "percentage"
-    public static let interactiveIsFinishedKey = "isFinished"
+    static let interactiveIsPresentingKey = "isPresenting"
+    static let interactivePercentageKey = "percentage"
+    static let interactiveIsFinishedKey = "isFinished"
 }
 
 extension DawnDriver {
