@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
     DawnTransition is a simple and easy-to-use iOS transition framework that supports smooth and customizable animations. It solves common gesture conflicts in custom transitions and provides a native-like interactive swipe-back gesture. It has been proven reliable in multiple real-world projects.
                        DESC
 
+  s.swift_versions = ['5.0']
+  
   s.homepage         = 'https://github.com/snail-z/DawnTransition'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'snail-z' => 'haozhang0770@163.com' }
