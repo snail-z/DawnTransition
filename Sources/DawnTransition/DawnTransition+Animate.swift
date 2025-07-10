@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DawnTransition {
+extension DawnDriver {
     
     internal func start() {
         guard state == .starting else { return }

@@ -76,7 +76,7 @@ open class DawnAnimationDrawer: DawnAnimationTransform, DawnAnimationCapable {
         return view
     }()
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         guard let fromSnoptView = dawn.fromViewController?.view else { return }
         guard let toSnoptView = dawn.toViewController?.view else { return }
@@ -156,7 +156,7 @@ open class DawnAnimationDrawer: DawnAnimationTransform, DawnAnimationCapable {
         }
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         guard let fromSnoptView = dawn.fromViewController?.view else { return }
         guard let toSnoptView = dawn.toViewController?.view else { return }

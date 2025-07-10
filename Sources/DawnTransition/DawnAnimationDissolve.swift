@@ -32,7 +32,7 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
     }
     
     // swiftlint:disable function_body_length cyclomatic_complexity
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         let fromView = dawn.fromViewController!.view!
         let toView = dawn.toViewController!.view!
@@ -126,7 +126,7 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
     }
     
     // swiftlint:disable function_body_length cyclomatic_complexity
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         let fromView = dawn.fromViewController!.view!
         let toView = dawn.toViewController!.view!

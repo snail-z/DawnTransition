@@ -25,10 +25,10 @@ public enum DawnTransitionState: Int {
 
 public class Dawn: NSObject {
     
-    public static var shared = DawnTransition()
+    public static var shared = DawnDriver()
 }
 
-public class DawnTransition: NSObject {
+public class DawnDriver: NSObject {
     
     public var isTransitioning: Bool { return state != .possible }
     

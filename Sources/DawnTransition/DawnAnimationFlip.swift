@@ -54,15 +54,15 @@ open class DawnAnimationFlip: DawnAnimationTransform, DawnAnimationCapable {
     /// 动画是否自动按反方向消失，默认true
     public var isReversed: Bool = true
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         animateTransitioning(dawn, direction: direction)
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         animateTransitioning(dawn, direction: isReversed ? direction.reversed : direction)
     }
     
-    private func animateTransitioning(_ dawn: DawnTransition, direction: Direction) {
+    private func animateTransitioning(_ dawn: DawnDriver, direction: Direction) {
         let containerView = dawn.containerView!
         guard let fromSnoptView = dawn.fromViewController?.view else { return }
         guard let toSnoptView = dawn.toViewController?.view else { return }

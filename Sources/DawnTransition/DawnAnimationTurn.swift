@@ -41,15 +41,15 @@ open class DawnAnimationTurn: DawnAnimationTransform, DawnAnimationCapable {
     /// 用于呈现视角远近效果的系数，perspective越大效果越明显，取值[0, 1]
     public var perspective: CGFloat = 0.1
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         animateTransitioning(dawn, direction: direction)
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         animateTransitioning(dawn, direction: isReversed ? direction.reversed : direction)
     }
     
-    private func animateTransitioning(_ dawn: DawnTransition, direction: Direction) {
+    private func animateTransitioning(_ dawn: DawnDriver, direction: Direction) {
         let containerView = dawn.containerView!
         guard let fromSnoptView = dawn.fromViewController?.view else { return }
         guard let toSnoptView = dawn.toViewController?.view else { return }

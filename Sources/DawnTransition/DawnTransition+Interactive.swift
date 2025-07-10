@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DawnTransition {
+extension DawnDriver {
     
     public func driven(presenting viewController: UIViewController) {
         postWillInteractive(isPresenting: true)
@@ -82,7 +82,7 @@ public extension Dawn {
     public static let interactiveIsFinishedKey = "isFinished"
 }
 
-extension DawnTransition {
+extension DawnDriver {
     
     fileprivate func postWillInteractive(isPresenting: Bool) {
         let userInfo: [AnyHashable: Any] = [Dawn.interactiveIsPresentingKey: isPresenting]
@@ -109,7 +109,7 @@ extension DawnTransition {
     }
 }
 
-extension DawnTransition {
+extension DawnDriver {
     
     fileprivate var drivable: UIPercentDrivenInteractiveTransition? {
         return driveninViewController?.dawn.interactiveDriver

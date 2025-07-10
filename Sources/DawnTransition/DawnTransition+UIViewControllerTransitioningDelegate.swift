@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DawnTransition: UIViewControllerTransitioningDelegate {
+extension DawnDriver: UIViewControllerTransitioningDelegate {
  
     internal var interactiveTransitioning: UIViewControllerInteractiveTransitioning? {
         return driveninViewController?.dawn.interactiveDriver
@@ -40,7 +40,7 @@ extension DawnTransition: UIViewControllerTransitioningDelegate {
     }
 }
 
-extension DawnTransition: UIViewControllerAnimatedTransitioning {
+extension DawnDriver: UIViewControllerAnimatedTransitioning {
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.375
@@ -59,7 +59,7 @@ extension DawnTransition: UIViewControllerAnimatedTransitioning {
     }
 }
 
-extension DawnTransition: UIViewControllerInteractiveTransitioning {
+extension DawnDriver: UIViewControllerInteractiveTransitioning {
     
     public var wantsInteractiveStart: Bool {
         return true

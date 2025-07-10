@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DawnTransition {
+extension DawnDriver {
 
     public func complete(finished: Bool, automated: Bool = true) {
         guard state == .animating || state == .starting else { return }
@@ -59,7 +59,7 @@ extension DawnTransition {
     }
 }
 
-extension DawnTransition {
+extension DawnDriver {
     
     fileprivate func addSubview(_ aView: UIView) {
         guard aView.superview != containerView else { return }

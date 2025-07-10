@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DawnTransition: UINavigationControllerDelegate {
+extension DawnDriver: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let delegate = navigationController.dawnPrevNavigationDelegate {

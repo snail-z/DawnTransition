@@ -53,7 +53,7 @@ extension DawnAnimationProducer {
 
 extension DawnAnimationProducer: DawnAnimationCapable {
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         let config = dawn.drivenAdjustable ?? presentingAdjustable
         let fromModifiers = dawn.preprocessFromModifiers(presentingModifierStage, config)
         let toModifiers = dawn.preprocessToModifiers(presentingModifierStage, config)
@@ -67,7 +67,7 @@ extension DawnAnimationProducer: DawnAnimationCapable {
         }
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         let config = dawn.drivenAdjustable ?? dismissingAdjustable
         let fromModifiers = dawn.preprocessFromModifiers(dismissingModifierStage, config)
         let toModifiers = dawn.preprocessToModifiers(dismissingModifierStage, config)
@@ -82,7 +82,7 @@ extension DawnAnimationProducer: DawnAnimationCapable {
     }
 }
 
-fileprivate extension DawnTransition {
+fileprivate extension DawnDriver {
     
     typealias AnimatedWork = () -> Void
     typealias FinishedWork = () -> Void

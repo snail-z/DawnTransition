@@ -11,10 +11,10 @@ import UIKit
 public protocol DawnAnimationCapable {
 
     /// 自定义控制器转场显示动画
-    func dawnAnimationPresenting(_ dawn: DawnTransition)
+    func dawnAnimationPresenting(_ dawn: DawnDriver)
    
     /// 自定义控制器转场消失动画
-    func dawnAnimationDismissing(_ dawn: DawnTransition)
+    func dawnAnimationDismissing(_ dawn: DawnDriver)
     
     /// 返回.none时，首选`dawnAnimationPresenting`实现，否则将使用`DawnAnimationType`动画
     func dawnAnimationPresentingAnimationType() -> DawnAnimationType
@@ -25,14 +25,14 @@ public protocol DawnAnimationCapable {
 
 extension DawnAnimationCapable {
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         guard dawnAnimationPresentingAnimationType() == .none else {
             return
         }
         fatalError("未实现`dawnAnimationPresenting`方法：「\(self)」")
     }
    
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         guard dawnAnimationDismissingAnimationType() == .none else {
             return
         }

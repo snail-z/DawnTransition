@@ -26,7 +26,7 @@ open class DawnAnimationDiffuse: NSObject, DawnAnimationCapable {
         diffuseInView = diffuseIn
     }
     
-    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+    public func dawnAnimationPresenting(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         let toView = dawn.toViewController!.view!
 //        guard let tempView = toView.dawn.snapshotView() else { return }
@@ -71,7 +71,7 @@ open class DawnAnimationDiffuse: NSObject, DawnAnimationCapable {
         }
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         let fromView = dawn.fromViewController!.view!
         let toView = dawn.toViewController!.view!

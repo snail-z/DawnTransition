@@ -26,7 +26,7 @@ open class DawnAnimationSpot: NSObject, DawnAnimationCapable {
         return animationType
     }
     
-    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+    public func dawnAnimationDismissing(_ dawn: DawnDriver) {
         let containerView = dawn.containerView!
         let fromView = dawn.fromViewController!.view!
         let toView = dawn.toViewController!.view!
