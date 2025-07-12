@@ -26,16 +26,16 @@ pod 'DawnTransition'
 ```
 Run pod install to integrate it into your project.
 
-📦 Swift Package Manager
+#### 📦 Swift Package Manager
 
 DawnTransition also supports [Swift Package Manager](https://swift.org/package-manager):
 
-In Xcode:
+#### In Xcode:
 - File > Swift Packages > Add Package Dependency
 - Add `https://github.com/snail-z/DawnTransition.git`
 - Select "Up to Next Major" with "1.1.0"
 
-Or manually in Package.swift:
+#### Or manually in Package.swift:
 ```swift
 // swift-tools-version:5.0
 import PackageDescription
