@@ -22,6 +22,24 @@ it, simply add the following line to your Podfile:
 pod 'DawnTransition'
 ```
 
+#### Swift Package Manager
+
+- File > Swift Packages > Add Package Dependency
+- Add `https://github.com/snail-z/DawnTransition.git`
+- Select "Up to Next Major" with "8.0.0"
+
+#### CocoaPods
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'DawnTransition', '~> 1.1.0'
+end
+```
+
 ## Author
 
 haoz, haozhang0770@163.com
