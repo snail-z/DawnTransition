@@ -13,6 +13,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- iOS 13.0+
+- Swift 5.0+
+
 ## Installation
 
 DawnTransition is available through [CocoaPods](https://cocoapods.org). To install
@@ -21,24 +24,36 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'DawnTransition'
 ```
+Run pod install to integrate it into your project.
 
-#### Swift Package Manager
+📦 Swift Package Manager
 
+DawnTransition also supports [Swift Package Manager](https://swift.org/package-manager):
+
+In Xcode:
 - File > Swift Packages > Add Package Dependency
 - Add `https://github.com/snail-z/DawnTransition.git`
-- Select "Up to Next Major" with "8.0.0"
+- Select "Up to Next Major" with "1.1.0"
 
-#### CocoaPods
+Or manually in Package.swift:
+```swift
+// swift-tools-version:5.0
+import PackageDescription
 
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '13.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'DawnTransition', '~> 1.1.0'
-end
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    dependencies: [
+        .package(url: "https://github.com/snail-z/DawnTransition.git", from: "1.1.0")
+    ],
+    targets: [
+        .target(
+            name: "YOUR_TARGET_NAME",
+            dependencies: ["DawnTransition"]
+        )
+    ]
+)
 ```
+Then run swift build to fetch and integrate the package.
 
 ## Author
 
