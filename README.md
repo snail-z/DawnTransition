@@ -7,9 +7,8 @@
 [![Version](https://img.shields.io/cocoapods/v/DawnTransition.svg?style=flat)](https://cocoapods.org/pods/DawnTransition)
 
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+DawnTransition is a lightweight iOS transition framework for smooth, customizable animations and native-like interactive swipe-back gestures. It solves common gesture conflicts in custom transitions and is proven in real projects.
 
 ## Requirements
 
@@ -54,6 +53,18 @@ let package = Package(
 )
 ```
 Then run swift build to fetch and integrate the package.
+
+## Usage
+
+```swift
+let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
+    guard let `self` = self else { return }
+    self.dismiss(animated: true)
+}
+pan.isRecognizeWhenEdges = false
+pan.recognizeDirection = .leftToRight
+view.dawn.addPanGestureRecognizer(pan)
+```
 
 ## Author
 
