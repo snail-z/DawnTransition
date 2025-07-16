@@ -14,7 +14,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		813293B5421F04FB2010B54E /* Pods_DawnTransition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4B0D7D998E3B4729BEA187 /* Pods_DawnTransition_Tests.framework */; };
 		817C552C2A846D590059B5F0 /* ViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C552B2A846D590059B5F0 /* ViewControllerCell.swift */; };
 		817C552E2A846DC60059B5F0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C552D2A846DC60059B5F0 /* Utility.swift */; };
@@ -35,9 +34,6 @@
 		81C85AC62A88B716009A7987 /* DescIMGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC52A88B716009A7987 /* DescIMGModel.swift */; };
 		81C85AC82A88B733009A7987 /* DescIMGCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC72A88B733009A7987 /* DescIMGCell.swift */; };
 		81C85ACA2A88B793009A7987 /* DescIMGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */; };
-		B819936A2E1FD1A40073887F /* DawnTransition.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B81993672E1FD1A40073887F /* DawnTransition.podspec */; };
-		B819936B2E1FD1A40073887F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B81993682E1FD1A40073887F /* LICENSE */; };
-		B819936C2E1FD1A40073887F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B81993692E1FD1A40073887F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +58,6 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DawnTransition_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DawnTransition_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6B19E8E8DC9B20BD9BBFCC0A /* Pods-DawnTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DawnTransition_Tests.release.xcconfig"; path = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6E22C8815738A60B4B98CC1E /* Pods-DawnTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DawnTransition_Example.debug.xcconfig"; path = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		817C552B2A846D590059B5F0 /* ViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCell.swift; sourceTree = "<group>"; };
@@ -90,9 +84,9 @@
 		81C85AC72A88B733009A7987 /* DescIMGCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGCell.swift; sourceTree = "<group>"; };
 		81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGHeaderView.swift; sourceTree = "<group>"; };
 		8D4B0D7D998E3B4729BEA187 /* Pods_DawnTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B81993672E1FD1A40073887F /* DawnTransition.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DawnTransition.podspec; sourceTree = "<group>"; };
-		B81993682E1FD1A40073887F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B81993692E1FD1A40073887F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8842C172E2681A100A1C18D /* DawnTransition.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DawnTransition.podspec; path = /Users/apus/Desktop/github/DawnTransition/DawnTransition.podspec; sourceTree = "<absolute>"; };
+		B8842C182E2681A100A1C18D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = /Users/apus/Desktop/github/DawnTransition/LICENSE; sourceTree = "<absolute>"; };
+		B8842C192E2681A100A1C18D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = /Users/apus/Desktop/github/DawnTransition/README.md; sourceTree = "<absolute>"; };
 		EBF99FD24F7C7A4B83B64E9D /* Pods_DawnTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,7 +124,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DawnTransition */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				98865DCD1ECF6A04498417BE /* Pods */,
 				13725B774B2CA32DAC3B9824 /* Frameworks */,
@@ -175,29 +168,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B81993672E1FD1A40073887F /* DawnTransition.podspec */,
-				B81993682E1FD1A40073887F /* LICENSE */,
-				B81993692E1FD1A40073887F /* README.md */,
+				B8842C172E2681A100A1C18D /* DawnTransition.podspec */,
+				B8842C182E2681A100A1C18D /* LICENSE */,
+				B8842C192E2681A100A1C18D /* README.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -354,9 +330,6 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				B819936A2E1FD1A40073887F /* DawnTransition.podspec in Resources */,
-				B819936B2E1FD1A40073887F /* LICENSE in Resources */,
-				B819936C2E1FD1A40073887F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

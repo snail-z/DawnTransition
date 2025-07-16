@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DawnTransition'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'A smooth iOS view controller transition framework.'
 
   s.description      = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'snail-z' => 'haozhang0770@163.com' }
   
-  s.swift_versions = ['5.1']
+  s.swift_versions = ['5.0']
   
   s.ios.deployment_target = '13.0'
   
