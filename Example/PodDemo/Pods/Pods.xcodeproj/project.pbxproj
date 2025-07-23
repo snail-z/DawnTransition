@@ -26,7 +26,7 @@
 		279AD99B87F568621F7E66FF6007DCB6 /* DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30592957C0333B8015AF803AF9C725E3 /* DawnSwizzling.swift */; };
 		2870D9A266AF91424A0554FA2975D5BB /* UIView+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B46916AC5C3D7862D14417EB8E07D2 /* UIView+Dawn.swift */; };
 		2ADC65C7135F8666CB76C6B683CD4186 /* ObjcDawnAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4750E103FDCB87187AAF14D17D19F /* ObjcDawnAnimationType.swift */; };
-		2C006445C1F74A4BDAA320D2B58D0C5D /* DawnTransition.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition.bundle */; };
+		2C006445C1F74A4BDAA320D2B58D0C5D /* DawnTransition-DawnTransition in Resources */ = {isa = PBXBuildFile; fileRef = AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition-DawnTransition */; };
 		2C69195D06CE6856E60D585A6B4189B6 /* UICollectionView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EFFDD32B54433E59E9993C35AADDA /* UICollectionView+DawnExtensions.swift */; };
 		2F3EE264449768210D1E683A43A3EE97 /* DawnTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7AF950F29B1654A581960E7C57A2D /* DawnTextField.swift */; };
 		2F55F203DF80157769DDFD1765559C69 /* DawnAnimationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED6FE94D2C1D22A9A82B399EFA2312B /* DawnAnimationTransform.swift */; };
@@ -160,7 +160,7 @@
 		30592957C0333B8015AF803AF9C725E3 /* DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnSwizzling.swift; path = Sources/DawnTransition/DawnSwizzling.swift; sourceTree = "<group>"; };
 		309B1AFEABC91F1AA2843CAA1ED1D1F6 /* Array+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Array+DawnExtensions.swift"; sourceTree = "<group>"; };
 		32A460763AE0AD9DC1C588B17205253C /* UIDevice+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIDevice+DawnExtensions.swift"; sourceTree = "<group>"; };
-		339DBF9D49D543842B1A3851617DD606 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		339DBF9D49D543842B1A3851617DD606 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		35FC87EF21BB880D4B838812FA050C9B /* DawnTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTextView.swift; path = DawnKit/Classes/DawnUI/DawnTextView.swift; sourceTree = "<group>"; };
 		375E2CE68F66D6C45B57DC52DA2524C9 /* DawnTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnTransition-dummy.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -212,9 +212,9 @@
 		98B416423D5D292110259B402F70C731 /* DawnKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnKit-dummy.m"; sourceTree = "<group>"; };
 		9C6FD974ED3038059800080AEDD081D3 /* DawnKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnKit.release.xcconfig; sourceTree = "<group>"; };
 		9D3138E17E4345D79157716156815387 /* DawnAnimationFlip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationFlip.swift; path = Sources/DawnTransition/DawnAnimationFlip.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FD0929B4F06EC37CF61D76C85465720 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		A036A483DE39ABDFE97286CEDC47C14D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD0929B4F06EC37CF61D76C85465720 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Sources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A036A483DE39ABDFE97286CEDC47C14D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A31EFFDD32B54433E59E9993C35AADDA /* UICollectionView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UICollectionView+DawnExtensions.swift"; sourceTree = "<group>"; };
 		A3E98EC55BB28A4A9CD82820895E543E /* DawnTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Complete.swift"; path = "Sources/DawnTransition/DawnTransition+Complete.swift"; sourceTree = "<group>"; };
 		A5D4AE243CE287F106BBECEF29ECB684 /* DawnTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Interactive.swift"; path = "Sources/DawnTransition/DawnTransition+Interactive.swift"; sourceTree = "<group>"; };
@@ -222,10 +222,10 @@
 		AC614D18F34D1E34FA9720CAD58A8E76 /* DawnKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DawnKit-Info.plist"; sourceTree = "<group>"; };
 		AED6FE94D2C1D22A9A82B399EFA2312B /* DawnAnimationTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTransform.swift; path = Sources/DawnTransition/DawnAnimationTransform.swift; sourceTree = "<group>"; };
 		AF166DDB0EC390297ED8761A7379D5CB /* Pods-DawnTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Tests.modulemap"; sourceTree = "<group>"; };
-		AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DawnTransition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition-DawnTransition */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DawnTransition-DawnTransition"; path = DawnTransition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8156F1697DE3C24A91AD8DE335CA48A /* Pods-DawnTransition_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DawnTransition_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B87C5B89C1515121AD75A8D32836229B /* DawnAnimationCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCube.swift; path = Sources/DawnTransition/DawnAnimationCube.swift; sourceTree = "<group>"; };
-		BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DawnTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DawnTransition; path = DawnTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3996FCB325B3B74BEE172453438031F /* DawnAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationType.swift; path = Sources/DawnTransition/DawnAnimationType.swift; sourceTree = "<group>"; };
 		C4761D3EE79B3983B7DB538A9384D5D5 /* Dictionary+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Dictionary+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C4918FFAB1EEC69C0DF2703AC9D4AC14 /* UIScreen+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIScreen+DawnExtensions.swift"; sourceTree = "<group>"; };
@@ -234,13 +234,13 @@
 		C739DA8F7872887D4ECF45EBF8287535 /* NSUIFont+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIFont+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIFont+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C8A259ECD18E07442898CCF50ABF1ECC /* Pods-DawnTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C95E63295F37F8B0B2DA0B92540C0016 /* UINavigationBar+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UINavigationBar+DawnExtensions.swift"; sourceTree = "<group>"; };
-		C973143335A85B6310D637CA5DC86927 /* DawnKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DawnKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C973143335A85B6310D637CA5DC86927 /* DawnKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DawnKit; path = DawnKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD4750E103FDCB87187AAF14D17D19F /* ObjcDawnAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjcDawnAnimationType.swift; path = Sources/DawnTransition/ObjcDawnAnimationType.swift; sourceTree = "<group>"; };
 		CDE6C151718F9AA91987911A4EC4F1AB /* DawnTagContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTagContainerView.swift; path = DawnKit/Classes/DawnUI/DawnTagContainerView.swift; sourceTree = "<group>"; };
 		CDEEB8158A2813D3C588D95F767230F9 /* UIAlertController+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIAlertController+DawnExtensions.swift"; sourceTree = "<group>"; };
 		D302492BD3C79763F2CBAE2F8E8849E6 /* UIScrollView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIScrollView+DawnExtensions.swift"; sourceTree = "<group>"; };
 		DA8D0A4371FDF7DAC78B5FE94CDE0DDD /* CGGeometry+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGGeometry+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/CGGeometry+DawnExtensions.swift"; sourceTree = "<group>"; };
-		DAA6ED8C879A6E0BC09A171A429928E8 /* Pods_DawnTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Example"; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD7C05B9261B434033E4077E2D0BB6F /* DawnAnimationDiffuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDiffuse.swift; path = Sources/DawnTransition/DawnAnimationDiffuse.swift; sourceTree = "<group>"; };
 		DB1CD37B83C85B5A3362A87D0357CFBF /* DawnKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnKit-prefix.pch"; sourceTree = "<group>"; };
 		DFFBBD74BD85FBC551B3E668E683E437 /* Bundle+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Bundle+DawnExtensions.swift"; sourceTree = "<group>"; };
@@ -249,14 +249,14 @@
 		EABC180C1336EE7949CCA83D403AAC34 /* Pods-DawnTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EC5CBD3401E9F781D8CEEE3632F1BCCA /* DawnKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnKit-umbrella.h"; sourceTree = "<group>"; };
 		EDB492E3FAD6302B6A8CF454E7230E1F /* DawnCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnCompatible.swift; path = Sources/DawnTransition/DawnCompatible.swift; sourceTree = "<group>"; };
-		EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods_DawnTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Tests"; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F008AF701B6B770E4A854E275F991944 /* NSUIBezierPath+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIBezierPath+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIBezierPath+DawnExtensions.swift"; sourceTree = "<group>"; };
 		F2A5754A419A251356A1FD497FEDF215 /* DawnAnimationTurn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTurn.swift; path = Sources/DawnTransition/DawnAnimationTurn.swift; sourceTree = "<group>"; };
 		F4312DA8F46DDDE8B14D0AD5F034A5DD /* NSObject+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSObject+DawnExtensions.swift"; sourceTree = "<group>"; };
 		F5AF99372D2A34689A5E4BB5C86F2A21 /* DawnTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DawnTransition.modulemap; sourceTree = "<group>"; };
 		F6E7AF950F29B1654A581960E7C57A2D /* DawnTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTextField.swift; path = DawnKit/Classes/DawnUI/DawnTextField.swift; sourceTree = "<group>"; };
 		F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DawnTransition_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F9608242B138C84989C09DF989530965 /* DawnTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DawnTransition.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		F9608242B138C84989C09DF989530965 /* DawnTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DawnTransition.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA415437915B0ED790464051A15CCFE5 /* DawnAnimationCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCard.swift; path = Sources/DawnTransition/DawnAnimationCard.swift; sourceTree = "<group>"; };
 		FD72BF9924AFC0E0917C20299B313ADE /* Pods-DawnTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Example.modulemap"; sourceTree = "<group>"; };
 		FFF906234FF6FE7761300867B6F94A4D /* Pods-DawnTransition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DawnTransition_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -470,6 +470,7 @@
 				08C000FEA3121F325BCDBB87226D3822 /* DawnUI */,
 				E30FEDE0E4E65F88866138A1F58DD374 /* Support Files */,
 			);
+			name = DawnKit;
 			path = DawnKit;
 			sourceTree = "<group>";
 		};
@@ -492,11 +493,11 @@
 		B641B67FCA952ECB7891B613CEC8B1BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C973143335A85B6310D637CA5DC86927 /* DawnKit.framework */,
-				BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition.framework */,
-				AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition.bundle */,
-				DAA6ED8C879A6E0BC09A171A429928E8 /* Pods_DawnTransition_Example.framework */,
-				EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods_DawnTransition_Tests.framework */,
+				C973143335A85B6310D637CA5DC86927 /* DawnKit */,
+				BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */,
+				AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition-DawnTransition */,
+				DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */,
+				EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,7 +616,7 @@
 			);
 			name = "Pods-DawnTransition_Example";
 			productName = Pods_DawnTransition_Example;
-			productReference = DAA6ED8C879A6E0BC09A171A429928E8 /* Pods_DawnTransition_Example.framework */;
+			productReference = DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		7EBDDDB84DBDE6AA6DB68494EF17B961 /* DawnTransition-DawnTransition */ = {
@@ -632,7 +633,7 @@
 			);
 			name = "DawnTransition-DawnTransition";
 			productName = DawnTransition;
-			productReference = AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition.bundle */;
+			productReference = AF942C25E7301F50A0EE4CFD5C908B03 /* DawnTransition-DawnTransition */;
 			productType = "com.apple.product-type.bundle";
 		};
 		94907EC06CD9521E6FC770EE45E57CFC /* DawnKit */ = {
@@ -650,7 +651,7 @@
 			);
 			name = DawnKit;
 			productName = DawnKit;
-			productReference = C973143335A85B6310D637CA5DC86927 /* DawnKit.framework */;
+			productReference = C973143335A85B6310D637CA5DC86927 /* DawnKit */;
 			productType = "com.apple.product-type.framework";
 		};
 		A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */ = {
@@ -669,7 +670,7 @@
 			);
 			name = DawnTransition;
 			productName = DawnTransition;
-			productReference = BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition.framework */;
+			productReference = BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */;
 			productType = "com.apple.product-type.framework";
 		};
 		B33C2A2F4AFF723AF68EC01180F549DC /* Pods-DawnTransition_Tests */ = {
@@ -688,7 +689,7 @@
 			);
 			name = "Pods-DawnTransition_Tests";
 			productName = Pods_DawnTransition_Tests;
-			productReference = EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods_DawnTransition_Tests.framework */;
+			productReference = EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -709,6 +710,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = B641B67FCA952ECB7891B613CEC8B1BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -727,7 +730,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C006445C1F74A4BDAA320D2B58D0C5D /* DawnTransition.bundle in Resources */,
+				2C006445C1F74A4BDAA320D2B58D0C5D /* DawnTransition-DawnTransition in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1213,7 +1216,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
