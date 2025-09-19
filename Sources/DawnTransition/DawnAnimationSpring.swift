@@ -173,8 +173,8 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         group.notify(queue: .main) {
             overlayView.removeFromSuperview()
             fromView.layer.cornerRadius = 0
-            fromView.layer.zPosition = 0
-            toView.layer.zPosition = 0
+            fromView.layer.zPosition = self.depth(.normal)
+            toView.layer.zPosition = self.depth(.normal)
             fromView.transform = .identity
             toView.transform = .identity
             dawn.complete(finished: true)
