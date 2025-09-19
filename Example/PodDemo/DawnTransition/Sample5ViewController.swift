@@ -79,6 +79,7 @@ extension Sample5ViewController {
         springAnimation.damping = 0.6
         springAnimation.velocity = 0.3
         springAnimation.duration = 0.8
+        springAnimation.updateConfiguration()
         vc.dawn.transitionCapable = springAnimation
         self.navigationController?.pushViewController(vc, animated: true)
     }

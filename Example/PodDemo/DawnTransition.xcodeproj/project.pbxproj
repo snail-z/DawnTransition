@@ -183,12 +183,12 @@
 		817C552F2A84710F0059B5F0 /* Smaple */ = {
 			isa = PBXGroup;
 			children = (
-				B8EF5D442E7CF91100DDB099 /* Sample5ViewController.swift */,
 				817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */,
 				817C55302A84712F0059B5F0 /* Sample1ViewController.swift */,
 				817C55322A8471530059B5F0 /* Sample2ViewController.swift */,
 				81C85AA02A865999009A7987 /* Sample3ViewController.swift */,
 				2F61BAC32AAB2AA300DA6ECA /* Sample4ViewController.swift */,
+				B8EF5D442E7CF91100DDB099 /* Sample5ViewController.swift */,
 			);
 			name = Smaple;
 			sourceTree = "<group>";
