@@ -62,6 +62,8 @@ extension DawnDriver {
     }
     
     internal func driven(_ viewController: UIViewController, presenting: Bool) {
+        // 若已有转场正在进行，忽略新的交互驱动，避免系统进入无动画但持有交互驱动的异常状态
+        if isTransitioning { return }
         driveninViewController = viewController
         if let producer = viewController.dawn.transitionCapable as? DawnAnimationProducer {
             // Producer 动画：直接线性化参数

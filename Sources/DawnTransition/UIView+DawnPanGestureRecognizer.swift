@@ -170,6 +170,10 @@ extension DawnPanGestureRecognizer {
 extension DawnPanGestureRecognizer {
     
     @objc internal func prepare() {
+        // 避免在已有转场动画未完成时再次触发新的交互转场，防止层级错乱或系统卡死
+        if Dawn.shared.isTransitioning {
+            return
+        }
         willTransition?()
         switch transitionType {
         case .present:
@@ -288,6 +292,8 @@ extension DawnPanGestureRecognizer {
 extension DawnPanGestureRecognizer: UIGestureRecognizerDelegate {
     
     open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        // 若当前已有转场正在进行，禁止新的手势开始
+        if Dawn.shared.isTransitioning { return false }
         guard !isActive(gestureRecognizer) else { return false }
         guard !isRecognizeWhenEdges else { return true }
         let g = gestureRecognizer as! UIPanGestureRecognizer
