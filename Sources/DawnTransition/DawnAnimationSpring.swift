@@ -36,7 +36,7 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     public var scale: CGFloat = 0.95 { didSet { setupSpringAnimation() } }
     
     /// 圆角（默认与系统一致 6），可按需调大；会覆盖默认的 initialCorner/defaultCorner
-    public var cornerRadius: CGFloat = 6 { didSet { setupSpringAnimation() } }
+    public var cornerRadius: CGFloat = 30 { didSet { setupSpringAnimation() } }
     
     /// 设置弹性阻尼参数，默认0.6
     public var damping: CGFloat = 0.6 { didSet { setupSpringAnimation() } }
