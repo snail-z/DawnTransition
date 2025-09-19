@@ -144,7 +144,7 @@ extension DawnTransitionAdjustable {
     fileprivate func regenerate() -> DawnTransitionAdjustable {
         return DawnTransitionAdjustable(
             delay: self.delay,
-            duration: 0.325,
+            duration: self.spring == nil ? self.duration : 0.325,
             curve: .linear,
             spring: nil,
             snapshotType: self.snapshotType,

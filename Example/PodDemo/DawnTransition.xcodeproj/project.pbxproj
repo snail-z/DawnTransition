@@ -34,6 +34,7 @@
 		81C85AC62A88B716009A7987 /* DescIMGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC52A88B716009A7987 /* DescIMGModel.swift */; };
 		81C85AC82A88B733009A7987 /* DescIMGCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC72A88B733009A7987 /* DescIMGCell.swift */; };
 		81C85ACA2A88B793009A7987 /* DescIMGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */; };
+		B8EF5D452E7CF91100DDB099 /* Sample5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF5D442E7CF91100DDB099 /* Sample5ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		B8842C172E2681A100A1C18D /* DawnTransition.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DawnTransition.podspec; path = /Users/apus/Desktop/github/DawnTransition/DawnTransition.podspec; sourceTree = "<absolute>"; };
 		B8842C182E2681A100A1C18D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = /Users/apus/Desktop/github/DawnTransition/LICENSE; sourceTree = "<absolute>"; };
 		B8842C192E2681A100A1C18D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = /Users/apus/Desktop/github/DawnTransition/README.md; sourceTree = "<absolute>"; };
+		B8EF5D442E7CF91100DDB099 /* Sample5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5ViewController.swift; sourceTree = "<group>"; };
 		EBF99FD24F7C7A4B83B64E9D /* Pods_DawnTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 		817C552F2A84710F0059B5F0 /* Smaple */ = {
 			isa = PBXGroup;
 			children = (
+				B8EF5D442E7CF91100DDB099 /* Sample5ViewController.swift */,
 				817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */,
 				817C55302A84712F0059B5F0 /* Sample1ViewController.swift */,
 				817C55322A8471530059B5F0 /* Sample2ViewController.swift */,
@@ -428,6 +431,7 @@
 				81C85AA12A865999009A7987 /* Sample3ViewController.swift in Sources */,
 				81C85AA92A88B38D009A7987 /* KlipageModel.swift in Sources */,
 				81C85ABC2A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift in Sources */,
+				B8EF5D452E7CF91100DDB099 /* Sample5ViewController.swift in Sources */,
 				81C85ABA2A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m in Sources */,
 				81C85AAB2A88B3BB009A7987 /* KlipageViewController.swift in Sources */,
 				817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */,

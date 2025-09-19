@@ -51,7 +51,7 @@ extension DawnDriver: UIViewControllerAnimatedTransitioning {
         fromViewController = fromViewController ?? transitionContext.viewController(forKey: .from)
         toViewController = toViewController ?? transitionContext.viewController(forKey: .to)
         containerView = transitionContext.containerView
-        // 在一次转场生命周期内屏蔽容器内的所有交互，避免在动画过程中触发新的手势导致卡死或层级错乱
+        // fix：在一次转场生命周期内屏蔽容器内的所有交互，避免在动画过程中触发新的手势导致卡死或层级错乱
         containerView?.isUserInteractionEnabled = false
         start()
     }

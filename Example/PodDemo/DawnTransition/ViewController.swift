@@ -44,7 +44,8 @@ class ViewController: UIViewController {
     let dataList = ["Sample1ViewController",
                     "Sample2ViewController",
                     "Sample3ViewController",
-                    "Sample4ViewController"]
+                    "Sample4ViewController",
+                    "Sample5ViewController"]
 }
 
 extension ViewController: UITableViewDataSource {
@@ -86,6 +87,11 @@ extension ViewController: UITableViewDelegate {
         
         if value == "Sample4ViewController" {
             let vc = Sample4ViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if value == "Sample5ViewController" {
+            let vc = Sample5ViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

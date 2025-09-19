@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/apus/Desktop/源码仓库/GitHub/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
