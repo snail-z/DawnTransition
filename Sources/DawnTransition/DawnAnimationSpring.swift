@@ -70,11 +70,25 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         overrideCorner(&presentingModifierStage.fromViewEndModifiers, clips: true)
         overrideCorner(&presentingModifierStage.toViewBeginModifiers, clips: false)
         overrideCorner(&presentingModifierStage.toViewEndModifiers, clips: true)
+        // 轻微阴影（仅在动画过程中可见，结束时清理）
+        if presentingModifierStage.toViewBeginModifiers != nil {
+            presentingModifierStage.toViewBeginModifiers!.append(.shadow(.black, opacity: 0.05, radius: 6, offset: .zero))
+        }
+        if presentingModifierStage.toViewEndModifiers != nil {
+            presentingModifierStage.toViewEndModifiers!.append(.shadow(.clear, opacity: 0))
+        }
         // dismissing 阶段
         overrideCorner(&dismissingModifierStage.fromViewBeginModifiers, clips: false)
         overrideCorner(&dismissingModifierStage.fromViewEndModifiers, clips: true)
         overrideCorner(&dismissingModifierStage.toViewBeginModifiers, clips: true)
         overrideCorner(&dismissingModifierStage.toViewEndModifiers, clips: false)
+        // 轻微阴影（仅在动画过程中可见，结束时清理）
+        if dismissingModifierStage.fromViewBeginModifiers != nil {
+            dismissingModifierStage.fromViewBeginModifiers!.append(.shadow(.black, opacity: 0.05, radius: 6, offset: .zero))
+        }
+        if dismissingModifierStage.fromViewEndModifiers != nil {
+            dismissingModifierStage.fromViewEndModifiers!.append(.shadow(.clear, opacity: 0))
+        }
         
         let presentingHierarchy: [DawnTransitionAdjustable.Hierarchy] = [.from, .to]
         let dismissingHierarchy: [DawnTransitionAdjustable.Hierarchy] = [.to, .from]
