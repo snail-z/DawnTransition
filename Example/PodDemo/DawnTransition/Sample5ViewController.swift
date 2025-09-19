@@ -73,7 +73,7 @@ extension Sample5ViewController {
     func jump1() {
         let vc = SpringDemo1ViewController()
         vc.dawn.isNavigationEnabled = true
-        let springAnimation = DawnAnimationSpring()
+        let springAnimation = DawnAnimationElasticSlide()
         springAnimation.direction = .left
         springAnimation.scale = 0.9
         springAnimation.damping = 0.6
@@ -86,7 +86,7 @@ extension Sample5ViewController {
     func jump2() {
         let vc = SpringDemo2ViewController()
         vc.dawn.isModalEnabled = true
-        let springAnimation = DawnAnimationSpring()
+        let springAnimation = DawnAnimationElasticSlide()
         springAnimation.direction = .right
         springAnimation.scale = 0.85
         springAnimation.damping = 0.4
@@ -99,7 +99,7 @@ extension Sample5ViewController {
     func jump3() {
         let vc = SpringDemo3ViewController()
         vc.dawn.isNavigationEnabled = true
-        let springAnimation = DawnAnimationSpring()
+        let springAnimation = DawnAnimationElasticSlide()
         springAnimation.direction = .up
         springAnimation.scale = 0.95
         springAnimation.damping = 0.5
@@ -112,7 +112,7 @@ extension Sample5ViewController {
     func jump4() {
         let vc = SpringDemo4ViewController()
         vc.dawn.isModalEnabled = true
-        let springAnimation = DawnAnimationSpring()
+        let springAnimation = DawnAnimationElasticSlide()
         springAnimation.direction = .down
         springAnimation.scale = 0.88
         springAnimation.damping = 0.7

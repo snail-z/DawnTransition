@@ -1,5 +1,5 @@
 //
-//  DawnAnimationSpring.swift
+//  DawnAnimationElasticSlide.swift
 //  DawnTransition
 //
 //  Created by zhang on 2020/7/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DawnAnimationSpring: DawnAnimationProducer {
+open class DawnAnimationElasticSlide: DawnAnimationProducer {
     
     public enum Direction {
         case left, right, up, down
@@ -24,25 +24,25 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     }
     
     /// 设置动画转场方向，默认.left
-    public var direction: Direction = .left { didSet { setupSpringAnimation() } }
+    public var direction: Direction = .left
     
     /// 动画是否自动按反方向消失，默认true
-    public var isReversed: Bool = true { didSet { setupSpringAnimation() } }
+    public var isReversed: Bool = true
     
     /// 设置动画持续时间
-    public var duration: TimeInterval = 0.6 { didSet { setupSpringAnimation() } }
+    public var duration: TimeInterval = 0.5
     
     /// 设置后方视图缩放比例，默认0.95
-    public var scale: CGFloat = 0.95 { didSet { setupSpringAnimation() } }
+    public var scale: CGFloat = 0.95
     
-    /// 圆角（默认与系统一致 6），可按需调大；会覆盖默认的 initialCorner/defaultCorner
-    public var cornerRadius: CGFloat = 30 { didSet { setupSpringAnimation() } }
+    /// 圆角，可按需调大；会覆盖默认的 initialCorner/defaultCorner
+    public var cornerRadius: CGFloat = 30
     
-    /// 设置弹性阻尼参数，默认0.6
-    public var damping: CGFloat = 0.6 { didSet { setupSpringAnimation() } }
+    /// 设置弹性阻尼参数
+    public var damping: CGFloat = 0.8
     
-    /// 设置弹性速度参数，默认0.2
-    public var velocity: CGFloat = 0.2 { didSet { setupSpringAnimation() } }
+    /// 设置弹性速度参数
+    public var velocity: CGFloat = 0.6
     
     public override init() {
         super.init()
@@ -65,6 +65,7 @@ open class DawnAnimationSpring: DawnAnimationProducer {
             mods!.append(.cornerRadius(cornerRadius))
             if clips { mods!.append(.clipsToBounds(true)) }
         }
+        
         // presenting 阶段
         overrideCorner(&presentingModifierStage.fromViewBeginModifiers, clips: false)
         overrideCorner(&presentingModifierStage.fromViewEndModifiers, clips: true)
@@ -82,9 +83,10 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         overrideCorner(&dismissingModifierStage.fromViewEndModifiers, clips: true)
         overrideCorner(&dismissingModifierStage.toViewBeginModifiers, clips: true)
         overrideCorner(&dismissingModifierStage.toViewEndModifiers, clips: false)
+        
         // 轻微阴影（仅在动画过程中可见，结束时清理）
         if dismissingModifierStage.fromViewBeginModifiers != nil {
-            dismissingModifierStage.fromViewBeginModifiers!.append(.shadow(.black, opacity: 0.05, radius: 6, offset: .zero))
+            dismissingModifierStage.fromViewBeginModifiers!.append(.shadow(.black, opacity: 0.06, radius: 6, offset: .zero))
         }
         if dismissingModifierStage.fromViewEndModifiers != nil {
             dismissingModifierStage.fromViewEndModifiers!.append(.shadow(.clear, opacity: 0))
@@ -100,6 +102,7 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         presentingAdjustable.curve = .easeInOut
         presentingAdjustable.spring = (damping, velocity)
         presentingAdjustable.snapshotType = .slowSnapshot
+        
         sameDismissingAdjustable()
     }
     
@@ -112,6 +115,6 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         }
     }
     
-    /// 更新动画配置（如果你是批量修改属性，也可手动调用）
+    /// 更新动画配置
     public func updateConfiguration() { setupSpringAnimation() }
 }

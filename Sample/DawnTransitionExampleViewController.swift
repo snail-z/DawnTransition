@@ -136,7 +136,7 @@ extension DawnTransitionExampleViewController: UITableViewDataSource, UITableVie
                 let targetVC = AnimationTargetDemoViewController()
                 targetVC.animationTitle = "Spring (Interactive)"
                 targetVC.dawn.isNavigationEnabled = true
-                let spring = DawnAnimationSpring()
+                let spring = DawnAnimationElasticSlide()
                 spring.direction = .left
                 spring.scale = 0.95
                 spring.damping = 0.6
