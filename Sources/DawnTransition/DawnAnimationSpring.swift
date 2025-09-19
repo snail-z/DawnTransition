@@ -44,9 +44,6 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     /// 设置弹性速度参数，默认0.2
     public var velocity: CGFloat = 0.2 { didSet { setupSpringAnimation() } }
     
-    /// dismiss 阶段是否去除弹性（fromView 不弹），默认 true
-    public var dismissingInanimate: Bool = true { didSet { setupSpringAnimation() } }
-    
     public override init() {
         super.init()
         setupSpringAnimation()
@@ -90,9 +87,6 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         presentingAdjustable.spring = (damping, velocity)
         presentingAdjustable.snapshotType = .slowSnapshot
         sameDismissingAdjustable()
-        if dismissingInanimate {
-            dismissingAdjustable.spring = nil
-        }
     }
     
     private func dawnDirection(_ direction: Direction) -> DawnAnimationType.Direction {
