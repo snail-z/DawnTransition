@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DawnTransition'
-  s.version          = '1.3.0'
+  s.version          = '1.3.1'
   s.summary          = 'A smooth iOS view controller transition framework.'
 
   s.description      = <<-DESC

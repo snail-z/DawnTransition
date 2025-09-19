@@ -101,7 +101,7 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
         presentingAdjustable.duration = duration
         presentingAdjustable.curve = .easeInOut
         presentingAdjustable.spring = (damping, velocity)
-        presentingAdjustable.snapshotType = .slowSnapshot
+        presentingAdjustable.snapshotType = .noSnapshot
         
         sameDismissingAdjustable()
     }
@@ -117,4 +117,18 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
     
     /// 更新动画配置
     public func updateConfiguration() { setupSpringAnimation() }
+}
+
+extension DawnAnimationElasticSlide {
+    
+    public static func `default`() -> DawnAnimationElasticSlide {
+        let springAnimation = DawnAnimationElasticSlide()
+        springAnimation.direction = .left
+        springAnimation.scale = 0.96
+        springAnimation.damping = 0.8
+        springAnimation.velocity = 0.6
+        springAnimation.duration = 0.5
+        springAnimation.updateConfiguration()
+        return springAnimation
+    }
 }
