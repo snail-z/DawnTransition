@@ -58,4 +58,8 @@ public class DawnDriver: NSObject {
     internal var driveninViewController: UIViewController?
     internal var drivenAdjustable: DawnTransitionAdjustable?
     internal var drivenChanged = false
+
+    // 导航转场时，用于临时关闭系统侧滑返回手势，转场完成后恢复
+    internal weak var navigationControllerForTransition: UINavigationController?
+    internal var prevPopGestureEnabled: Bool?
 }

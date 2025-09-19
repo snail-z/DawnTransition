@@ -29,6 +29,10 @@ extension DawnDriver: UINavigationControllerDelegate {
         self.fromViewController = fromViewController ?? fromVC
         self.toViewController = toViewController ?? toVC
         self.inNavigationController = true
+        // 暂时关闭系统的侧滑返回手势，避免在自定义转场过程中再次触发
+        self.navigationControllerForTransition = navigationController
+        self.prevPopGestureEnabled = navigationController.interactivePopGestureRecognizer?.isEnabled
+        navigationController.interactivePopGestureRecognizer?.isEnabled = false
         return self
     }
     

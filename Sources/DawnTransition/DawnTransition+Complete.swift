@@ -13,6 +13,14 @@ extension DawnDriver {
     public func complete(finished: Bool, automated: Bool = true) {
         guard state == .animating || state == .starting else { return }
         defer {
+            // 恢复容器交互
+            containerView?.isUserInteractionEnabled = true
+            // 恢复系统侧滑返回手势
+            if let nvc = navigationControllerForTransition, let prev = prevPopGestureEnabled {
+                nvc.interactivePopGestureRecognizer?.isEnabled = prev
+            }
+            navigationControllerForTransition = nil
+            prevPopGestureEnabled = nil
             inNavigationController = false
             transitionContext = nil
             fromViewController = nil
