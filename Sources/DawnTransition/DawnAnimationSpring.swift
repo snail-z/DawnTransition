@@ -35,6 +35,9 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     /// 设置后方视图缩放比例，默认0.95
     public var scale: CGFloat = 0.95 { didSet { setupSpringAnimation() } }
     
+    /// 圆角（默认与系统一致 6），可按需调大；会覆盖默认的 initialCorner/defaultCorner
+    public var cornerRadius: CGFloat = 6 { didSet { setupSpringAnimation() } }
+    
     /// 设置弹性阻尼参数，默认0.6
     public var damping: CGFloat = 0.6 { didSet { setupSpringAnimation() } }
     
@@ -55,6 +58,23 @@ open class DawnAnimationSpring: DawnAnimationProducer {
         
         presentingModifierStage = DawnAnimationType.stage(type: pType)
         dismissingModifierStage = DawnAnimationType.stage(type: dType)
+
+        // 覆盖默认 corner 值为自定义的 cornerRadius
+        func overrideCorner(_ mods: inout [DawnModifier]?, clips: Bool) {
+            guard mods != nil else { return }
+            mods!.append(.cornerRadius(cornerRadius))
+            if clips { mods!.append(.clipsToBounds(true)) }
+        }
+        // presenting 阶段
+        overrideCorner(&presentingModifierStage.fromViewBeginModifiers, clips: false)
+        overrideCorner(&presentingModifierStage.fromViewEndModifiers, clips: true)
+        overrideCorner(&presentingModifierStage.toViewBeginModifiers, clips: false)
+        overrideCorner(&presentingModifierStage.toViewEndModifiers, clips: true)
+        // dismissing 阶段
+        overrideCorner(&dismissingModifierStage.fromViewBeginModifiers, clips: false)
+        overrideCorner(&dismissingModifierStage.fromViewEndModifiers, clips: true)
+        overrideCorner(&dismissingModifierStage.toViewBeginModifiers, clips: true)
+        overrideCorner(&dismissingModifierStage.toViewEndModifiers, clips: false)
         
         let presentingHierarchy: [DawnTransitionAdjustable.Hierarchy] = [.from, .to]
         let dismissingHierarchy: [DawnTransitionAdjustable.Hierarchy] = [.to, .from]
