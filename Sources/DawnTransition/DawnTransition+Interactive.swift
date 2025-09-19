@@ -8,6 +8,13 @@
 
 import UIKit
 
+// 当自定义动画不走 DawnAnimationProducer 管线时，可通过实现该协议
+// 在手势交互开始时提供一个可被 "regenerate" 的 Producer，以获得线性、无弹性的手势体验。
+public protocol DawnInteractiveConvertible {
+    /// 返回一个用于手势交互阶段的 Producer（例如将自定义弹性动画替换为 pageIn/pageOut 的线性动画）
+    func dawnInteractiveProducer() -> DawnAnimationProducer?
+}
+
 extension DawnDriver {
     
     public func driven(presenting viewController: UIViewController) {
@@ -57,13 +64,27 @@ extension DawnDriver {
     internal func driven(_ viewController: UIViewController, presenting: Bool) {
         driveninViewController = viewController
         if let producer = viewController.dawn.transitionCapable as? DawnAnimationProducer {
-            /// 手势拖动时使用.linear动画，保持与手指同步的效果
+            // Producer 动画：直接线性化参数
             drivenAdjustable = presenting ?
-            producer.presentingAdjustable.regenerate() : producer.dismissingAdjustable.regenerate()
+                producer.presentingAdjustable.regenerate() :
+                producer.dismissingAdjustable.regenerate()
+        } else if let convertible = viewController.dawn.transitionCapable as? DawnInteractiveConvertible,
+                  let producer = convertible.dawnInteractiveProducer() {
+            // 自定义动画：在交互阶段临时切换为 Producer，以获得线性手势体验
+            viewController.dawn._interactiveBackupTransitionCapable = viewController.dawn.transitionCapable
+            viewController.dawn.transitionCapable = producer
+            drivenAdjustable = presenting ?
+                producer.presentingAdjustable.regenerate() :
+                producer.dismissingAdjustable.regenerate()
         }
     }
     
     internal func drivenComplete() {
+        // 交互结束后，若曾临时切换为 Producer，则还原为原来的自定义动画
+        if let vc = driveninViewController, let backup = vc.dawn._interactiveBackupTransitionCapable {
+            vc.dawn.transitionCapable = backup
+            vc.dawn._interactiveBackupTransitionCapable = nil
+        }
         drivenAdjustable = nil
         drivenChanged = false
         driveninViewController?.dawn.invalidateInteractiveDriver()
@@ -121,9 +142,9 @@ extension DawnTransitionAdjustable {
     fileprivate func regenerate() -> DawnTransitionAdjustable {
         return DawnTransitionAdjustable(
             delay: self.delay,
-            duration: self.duration,
+            duration: 0.325,
             curve: .linear,
-            spring: self.spring,
+            spring: nil,
             snapshotType: self.snapshotType,
             containerBackgroundColor: self.containerBackgroundColor,
             subviewsHierarchy: self.subviewsHierarchy

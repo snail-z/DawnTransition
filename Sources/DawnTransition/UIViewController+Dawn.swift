@@ -80,6 +80,20 @@ extension DawnExtension where Base: UIViewController {
     }
 }
 
+// 交互阶段备份原有的自定义动画（当临时替换为 Producer 时用于还原）
+fileprivate var DawnInteractiveBackupTransitionCapableAssociatedKey: Void?
+internal extension DawnExtension where Base: UIViewController {
+    
+    var _interactiveBackupTransitionCapable: DawnAnimationCapable? {
+        get {
+            return objc_getAssociatedObject(base, &DawnInteractiveBackupTransitionCapableAssociatedKey) as? DawnAnimationCapable
+        }
+        set {
+            objc_setAssociatedObject(base, &DawnInteractiveBackupTransitionCapableAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
+
 fileprivate var DawnInteractiveDriverViewControllerAssociatedKey: Void?
 extension DawnExtension where Base: UIViewController {
     

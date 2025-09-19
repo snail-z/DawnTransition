@@ -87,7 +87,8 @@ extension DawnTransitionExampleViewController: UITableViewDataSource, UITableVie
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return animations.count - 1 // 排除最后一个模态演示
+            // 原有导航转场 + 追加一个自定义 Spring(交互) 演示
+            return (animations.count - 1) + 1
         } else {
             return 1 // 模态演示
         }
@@ -101,8 +102,13 @@ extension DawnTransitionExampleViewController: UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimationCell", for: indexPath)
         
         if indexPath.section == 0 {
-            let (title, _) = animations[indexPath.row]
-            cell.textLabel?.text = title
+            let navCount = animations.count - 1
+            if indexPath.row < navCount {
+                let (title, _) = animations[indexPath.row]
+                cell.textLabel?.text = title
+            } else {
+                cell.textLabel?.text = "Spring (Interactive)"
+            }
         } else {
             cell.textLabel?.text = "Modal Demo"
         }
@@ -117,12 +123,27 @@ extension DawnTransitionExampleViewController: UITableViewDataSource, UITableVie
         tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.section == 0 {
-            // 导航转场动画
-            let (title, animationType) = animations[indexPath.row]
-            let targetVC = AnimationTargetDemoViewController()
-            targetVC.animationTitle = title
-            targetVC.bk_setupCustomTransition(animationType)
-            navigationController?.pushViewController(targetVC, animated: true)
+            let navCount = animations.count - 1
+            if indexPath.row < navCount {
+                // 既有类型
+                let (title, animationType) = animations[indexPath.row]
+                let targetVC = AnimationTargetDemoViewController()
+                targetVC.animationTitle = title
+                targetVC.bk_setupCustomTransition(animationType)
+                navigationController?.pushViewController(targetVC, animated: true)
+            } else {
+                // Spring（交互）演示：使用自定义动画能力
+                let targetVC = AnimationTargetDemoViewController()
+                targetVC.animationTitle = "Spring (Interactive)"
+                targetVC.dawn.isNavigationEnabled = true
+                let spring = DawnAnimationSpring()
+                spring.direction = .left
+                spring.scale = 0.95
+                spring.damping = 0.6
+                spring.velocity = 0.2
+                targetVC.dawn.transitionCapable = spring
+                navigationController?.pushViewController(targetVC, animated: true)
+            }
         } else {
             // 模态演示
             let modalDemoVC = ModalDemoViewController()
