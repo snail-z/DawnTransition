@@ -46,9 +46,6 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     
     /// dismiss 阶段是否去除弹性（fromView 不弹），默认 true
     public var dismissingInanimate: Bool = true { didSet { setupSpringAnimation() } }
-
-    /// 仅在 dismiss 阶段：fromView 不使用弹性，而 toView 仍使用弹性（默认开启）
-    public var dismissFromViewNoSpring: Bool = true
     
     public override init() {
         super.init()
@@ -109,75 +106,4 @@ open class DawnAnimationSpring: DawnAnimationProducer {
     
     /// 更新动画配置（如果你是批量修改属性，也可手动调用）
     public func updateConfiguration() { setupSpringAnimation() }
-
-    // 自定义 dismiss：fromView 无弹性、toView 仍然弹性
-    public override func dawnAnimationDismissing(_ dawn: DawnDriver) {
-        guard dismissFromViewNoSpring else {
-            super.dawnAnimationDismissing(dawn)
-            return
-        }
-        guard let containerView = dawn.containerView,
-              let fromView = dawn.fromViewController?.view,
-              let toView = dawn.toViewController?.view else {
-            super.dawnAnimationDismissing(dawn)
-            return
-        }
-        // 层级：确保 toView 在下方
-        if toView.superview !== containerView {
-            containerView.insertSubview(toView, belowSubview: fromView)
-        } else {
-            containerView.sendSubviewToBack(toView)
-        }
-        // 初始状态：toView 缩放 + 圆角 + 遮罩
-        toView.transform = CGAffineTransform(scaleX: scale, y: scale)
-        toView.layer.cornerRadius = cornerRadius
-        toView.layer.masksToBounds = true
-        let overlayView = UIView(frame: toView.bounds)
-        overlayView.backgroundColor = .black
-        overlayView.alpha = 0.1
-        toView.addSubview(overlayView)
-
-        // fromView 目标 frame（线性动画）
-        var finalFrame = containerView.frame
-        switch direction {
-        case .left:  finalFrame.origin.x = -containerView.frame.width
-        case .right: finalFrame.origin.x =  containerView.frame.width
-        case .up:    finalFrame.origin.y = -containerView.frame.height
-        case .down:  finalFrame.origin.y =  containerView.frame.height
-        }
-
-        // 并行动画：fromView 无弹性，toView 有弹性
-        let group = DispatchGroup()
-
-        group.enter()
-        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut) {
-            fromView.frame = finalFrame
-        } completion: { _ in
-            group.leave()
-        }
-
-        group.enter()
-        UIView.animate(withDuration: duration,
-                       delay: 0,
-                       usingSpringWithDamping: damping,
-                       initialSpringVelocity: velocity,
-                       options: [.curveEaseInOut, .allowUserInteraction]) {
-            toView.transform = .identity
-            toView.layer.cornerRadius = 0
-            toView.layer.masksToBounds = false
-            overlayView.alpha = 0
-        } completion: { _ in
-            group.leave()
-        }
-
-        group.notify(queue: .main) {
-            overlayView.removeFromSuperview()
-            fromView.layer.cornerRadius = 0
-            fromView.layer.zPosition = self.depth(.normal)
-            toView.layer.zPosition = self.depth(.normal)
-            fromView.transform = .identity
-            toView.transform = .identity
-            dawn.complete(finished: true)
-        }
-    }
 }
