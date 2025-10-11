@@ -100,12 +100,8 @@ extension DawnExtension where Base: UIView {
         self.startTransition = prepare
     }
     
-    /// 当ScrollView滚动到边缘时，优先响应DawnPanGestureRecognizer手势
-    @objc public func shouldPrioritize(by scrollView: UIScrollView?) {
-        trackingView = scrollView
-    }
-    
-    internal weak var trackingView: UIScrollView?
+    /// 当ScrollView滚动到边缘时，再响应DawnPanGestureRecognizer手势
+    private weak var trackingView: UIScrollView?
 }
 
 public final class _DawnPanGestureRecognizer: UIPanGestureRecognizer {}
@@ -287,6 +283,15 @@ extension DawnPanGestureRecognizer {
             return v.contentOffset.x > boundaries.right || v.contentOffset.x < boundaries.right
         }
     }
+    
+    private func isValidScrollable(_ scrollView: UIScrollView) -> Bool {
+        switch recognizeDirection {
+        case .topToBottom, .bottomToTop:
+            return scrollView.contentSize.height > scrollView.bounds.height
+        case .leftToRight, .rightToLeft:
+            return scrollView.contentSize.width > scrollView.bounds.width
+        }
+    }
 }
 
 extension DawnPanGestureRecognizer: UIGestureRecognizerDelegate {
@@ -315,6 +320,9 @@ extension DawnPanGestureRecognizer: UIGestureRecognizerDelegate {
     }
     
     open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        if let v = otherGestureRecognizer.view as? UIScrollView, isValidScrollable(v) {
+            trackingView = v
+        }
         return !isActive(gestureRecognizer)
     }
 }
