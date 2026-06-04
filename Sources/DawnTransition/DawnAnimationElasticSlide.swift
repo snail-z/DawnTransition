@@ -127,9 +127,9 @@ extension DawnAnimationElasticSlide {
     public static func `default`() -> DawnAnimationElasticSlide {
         let springAnimation = DawnAnimationElasticSlide()
         springAnimation.presentType = .pageIn(direction: .left, scale: 0.95)
-        springAnimation.damping = 0.8
-        springAnimation.velocity = 0.6
-        springAnimation.duration = 0.5
+        springAnimation.damping = 0.85
+        springAnimation.velocity = 0.2
+        springAnimation.duration = 0.375
         springAnimation.updateConfiguration()
         return springAnimation
     }
