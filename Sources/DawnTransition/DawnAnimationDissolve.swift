@@ -59,37 +59,43 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
         containerView.addSubview(tempView)
         
         targetSnapshot.frame = CGRect(
-            x: .zero, y: .zero,
+            x: .zero, y: (tempView.bounds.height - tempView.bounds.width / targetScale) / 2,
             width: tempView.bounds.width,
             height: tempView.bounds.width / targetScale
         )
         targetSnapshot.alpha = 0
         tempView.addSubview(targetSnapshot)
-        
-        sourceSnapshot.frame = CGRect(origin: .zero, size: tempView.bounds.size)
+
+        let sourceHeight = tempView.bounds.width / sourceScale
+        sourceSnapshot.frame = CGRect(
+            x: .zero, y: (tempView.bounds.height - sourceHeight) / 2,
+            width: tempView.bounds.width,
+            height: sourceHeight
+        )
         sourceSnapshot.alpha = 1
         tempView.addSubview(sourceSnapshot)
-        
+
         Dawn.animate(duration: duration,
                      delay: 0,
                      options: .curveEaseInOut,
                      springParameters: usingSpring) {
             tempView.frame = containerView.frame
             tempView.layer.cornerRadius = toView.layer.cornerRadius
-            
+
             sourceSnapshot.frame = CGRect(
-                x: .zero, y: .zero,
+                x: .zero, y: (tempView.bounds.height - tempView.bounds.width / sourceScale) / 2,
                 width: tempView.bounds.width,
                 height: tempView.bounds.width / sourceScale
             )
             targetSnapshot.frame = CGRect(
-                x: .zero, y: .zero,
+                x: .zero, y: (tempView.bounds.height - tempView.bounds.width / targetScale) / 2,
                 width: tempView.bounds.width,
                 height: tempView.bounds.width / targetScale
             )
             targetSnapshot.alpha = 1
             sourceSnapshot.alpha = 0
-        } completion: { finished in
+        }
+ completion: { finished in
             tempView.removeFromSuperview()
             toView.isHidden = false
             fromView.layer.transform = CATransform3DIdentity
@@ -150,22 +156,23 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
         tempView.layer.cornerRadius = fromView.layer.cornerRadius
         containerView.addSubview(tempView)
         
+        let sourceHeight = tempView.bounds.width / sourceScale
         sourceSnapshot.frame = CGRect(
-            x: .zero, y: .zero,
+            x: .zero, y: (tempView.bounds.height - sourceHeight) / 2,
             width: tempView.bounds.width,
-            height: targetView.bounds.width / sourceScale
+            height: sourceHeight
         )
         sourceSnapshot.alpha = 0
         tempView.addSubview(sourceSnapshot)
-        
+
         targetSnapshot.frame = CGRect(
-            x: .zero, y: .zero,
+            x: .zero, y: (tempView.bounds.height - tempView.bounds.height) / 2,
             width: tempView.bounds.width,
             height: tempView.bounds.height
         )
         targetSnapshot.alpha = 1
         tempView.addSubview(targetSnapshot)
-        
+
         let snapsView = containerView.viewWithTag(kSnapshotKey)
         let overlayView = containerView.viewWithTag(kOverlayKey)
         Dawn.animate(duration: duration,
@@ -174,17 +181,22 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
                      springParameters: usingSpring) {
             tempView.frame = targetFrame
             tempView.layer.cornerRadius = sourceView.layer.cornerRadius
-            
+
             targetSnapshot.frame = CGRect(
-                x: .zero, y: .zero,
+                x: .zero, y: (tempView.bounds.height - tempView.bounds.width / targetScale) / 2,
                 width: tempView.bounds.width,
                 height: tempView.bounds.width / targetScale
             )
-            sourceSnapshot.frame = tempView.bounds
+            sourceSnapshot.frame = CGRect(
+                x: .zero, y: (tempView.bounds.height - tempView.bounds.width / sourceScale) / 2,
+                width: tempView.bounds.width,
+                height: tempView.bounds.width / sourceScale
+            )
             sourceSnapshot.alpha = 1
             targetSnapshot.alpha = 0
             overlayView?.alpha = 0
-        } completion: { finished in
+        }
+ completion: { finished in
             if !dawn.isTransitionCancelled {
                 snapsView?.removeFromSuperview()
                 overlayView?.removeFromSuperview()

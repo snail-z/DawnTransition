@@ -24,7 +24,7 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
     }
     
     /// 设置动画转场方向，默认.left
-    public var direction: Direction = .left
+//    public var direction: Direction = .left
     
     /// 动画是否自动按反方向消失，默认true
     public var isReversed: Bool = true
@@ -33,7 +33,7 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
     public var duration: TimeInterval = 0.5
     
     /// 设置后方视图缩放比例，默认0.95
-    public var scale: CGFloat = 0.95
+//    public var scale: CGFloat = 0.95
     
     /// 圆角，可按需调大；会覆盖默认的 initialCorner/defaultCorner
     public var cornerRadius: CGFloat = 30
@@ -44,6 +44,9 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
     /// 设置弹性速度参数
     public var velocity: CGFloat = 0.6
     
+    /// 自定义动画类型
+    public var presentType: DawnAnimationType = .push(direction: .left)
+    
     public override init() {
         super.init()
         setupSpringAnimation()
@@ -53,7 +56,7 @@ open class DawnAnimationElasticSlide: DawnAnimationProducer {
         let pType: DawnAnimationType
         let dType: DawnAnimationType
         
-        pType = .pageIn(direction: dawnDirection(direction), scale: scale)
+        pType = presentType
         dType = isReversed ? pType.reversed() : pType
         
         presentingModifierStage = DawnAnimationType.stage(type: pType)
@@ -123,8 +126,7 @@ extension DawnAnimationElasticSlide {
     
     public static func `default`() -> DawnAnimationElasticSlide {
         let springAnimation = DawnAnimationElasticSlide()
-        springAnimation.direction = .left
-        springAnimation.scale = 0.96
+        springAnimation.presentType = .pageIn(direction: .left, scale: 0.95)
         springAnimation.damping = 0.8
         springAnimation.velocity = 0.6
         springAnimation.duration = 0.5

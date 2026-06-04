@@ -27,15 +27,16 @@ public extension DawnExtension where Base: UIView {
     }
 
     func slowSnapshotImage() -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(base.bounds.size, false, 0)
-        guard let currentContext = UIGraphicsGetCurrentContext() else {
-            UIGraphicsEndImageContext()
+        let size = base.bounds.size
+        guard size.width > 0, size.height > 0,
+              !size.width.isNaN, !size.height.isNaN,
+              !size.width.isInfinite, !size.height.isInfinite else {
             return nil
         }
-        base.layer.render(in: currentContext)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { context in
+            base.layer.render(in: context.cgContext)
+        }
     }
 }
 

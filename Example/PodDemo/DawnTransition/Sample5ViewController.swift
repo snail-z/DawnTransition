@@ -74,8 +74,6 @@ extension Sample5ViewController {
         let vc = SpringDemo1ViewController()
         vc.dawn.isNavigationEnabled = true
         let springAnimation = DawnAnimationElasticSlide()
-        springAnimation.direction = .left
-        springAnimation.scale = 0.9
         springAnimation.damping = 0.6
         springAnimation.velocity = 0.3
         springAnimation.duration = 0.8
@@ -88,8 +86,6 @@ extension Sample5ViewController {
         let vc = SpringDemo2ViewController()
         vc.dawn.isModalEnabled = true
         let springAnimation = DawnAnimationElasticSlide()
-        springAnimation.direction = .right
-        springAnimation.scale = 0.85
         springAnimation.damping = 0.4
         springAnimation.velocity = 0.5
         springAnimation.duration = 1.0
@@ -101,8 +97,6 @@ extension Sample5ViewController {
         let vc = SpringDemo3ViewController()
         vc.dawn.isNavigationEnabled = true
         let springAnimation = DawnAnimationElasticSlide()
-        springAnimation.direction = .up
-        springAnimation.scale = 0.95
         springAnimation.damping = 0.5
         springAnimation.velocity = 0.1
         springAnimation.duration = 0.9
@@ -114,8 +108,6 @@ extension Sample5ViewController {
         let vc = SpringDemo4ViewController()
         vc.dawn.isModalEnabled = true
         let springAnimation = DawnAnimationElasticSlide()
-        springAnimation.direction = .down
-        springAnimation.scale = 0.88
         springAnimation.damping = 0.7
         springAnimation.velocity = 0.2
         springAnimation.duration = 0.7

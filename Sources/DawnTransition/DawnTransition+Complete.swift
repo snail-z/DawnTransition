@@ -12,6 +12,10 @@ extension DawnDriver {
 
     public func complete(finished: Bool, automated: Bool = true) {
         guard state == .animating || state == .starting else { return }
+        guard let context = transitionContext else {
+            state = .possible
+            return
+        }
         defer {
             // 恢复容器交互
             containerView?.isUserInteractionEnabled = true
@@ -30,11 +34,11 @@ extension DawnDriver {
         }
         state = .completing
         
-        let transitionCancelled = transitionContext!.transitionWasCancelled
+        let transitionCancelled = context.transitionWasCancelled
         
         guard finished else {
-            transitionContext!.cancelInteractiveTransition()
-            transitionContext!.completeTransition(transitionCancelled)
+            context.cancelInteractiveTransition()
+            context.completeTransition(transitionCancelled)
             return
         }
 
