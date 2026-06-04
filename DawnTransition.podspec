@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DawnTransition'
-  s.version          = '1.3.2'
+  s.version          = '1.3.3'
   s.summary          = 'A smooth iOS view controller transition framework.'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.swift_versions = ['5.0']
   
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
   
   s.source           = { :git => 'https://github.com/snail-z/DawnTransition.git', :tag => s.version.to_s }
   s.source_files     = ["Sources/**/*.swift"]
